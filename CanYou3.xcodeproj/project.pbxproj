@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
+		07592B221F5E84E900986944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B211F5E84E900986944 /* ViewController.swift */; };
+		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
+		07592B271F5E84E900986944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07592B261F5E84E900986944 /* Assets.xcassets */; };
+		07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B281F5E84E900986944 /* LaunchScreen.storyboard */; };
+		07592B351F5E84E900986944 /* CanYou3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B341F5E84E900986944 /* CanYou3Tests.swift */; };
+		07592B401F5E84E900986944 /* CanYou3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B3F1F5E84E900986944 /* CanYou3UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07592B311F5E84E900986944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07592B141F5E84E900986944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07592B1B1F5E84E900986944;
+			remoteInfo = CanYou3;
+		};
+		07592B3C1F5E84E900986944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07592B141F5E84E900986944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07592B1B1F5E84E900986944;
+			remoteInfo = CanYou3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07592B211F5E84E900986944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07592B241F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07592B261F5E84E900986944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07592B291F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07592B2B1F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07592B301F5E84E900986944 /* CanYou3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYou3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07592B341F5E84E900986944 /* CanYou3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYou3Tests.swift; sourceTree = "<group>"; };
+		07592B361F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07592B3B1F5E84E900986944 /* CanYou3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYou3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07592B3F1F5E84E900986944 /* CanYou3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYou3UITests.swift; sourceTree = "<group>"; };
+		07592B411F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07592B191F5E84E900986944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B2D1F5E84E900986944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B381F5E84E900986944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07592B131F5E84E900986944 = {
+			isa = PBXGroup;
+			children = (
+				07592B1E1F5E84E900986944 /* CanYou3 */,
+				07592B331F5E84E900986944 /* CanYou3Tests */,
+				07592B3E1F5E84E900986944 /* CanYou3UITests */,
+				07592B1D1F5E84E900986944 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07592B1D1F5E84E900986944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07592B1C1F5E84E900986944 /* CanYou3.app */,
+				07592B301F5E84E900986944 /* CanYou3Tests.xctest */,
+				07592B3B1F5E84E900986944 /* CanYou3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07592B1E1F5E84E900986944 /* CanYou3 */ = {
+			isa = PBXGroup;
+			children = (
+				07592B1F1F5E84E900986944 /* AppDelegate.swift */,
+				07592B211F5E84E900986944 /* ViewController.swift */,
+				07592B231F5E84E900986944 /* Main.storyboard */,
+				07592B261F5E84E900986944 /* Assets.xcassets */,
+				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
+				07592B2B1F5E84E900986944 /* Info.plist */,
+			);
+			path = CanYou3;
+			sourceTree = "<group>";
+		};
+		07592B331F5E84E900986944 /* CanYou3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				07592B341F5E84E900986944 /* CanYou3Tests.swift */,
+				07592B361F5E84E900986944 /* Info.plist */,
+			);
+			path = CanYou3Tests;
+			sourceTree = "<group>";
+		};
+		07592B3E1F5E84E900986944 /* CanYou3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				07592B3F1F5E84E900986944 /* CanYou3UITests.swift */,
+				07592B411F5E84E900986944 /* Info.plist */,
+			);
+			path = CanYou3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07592B1B1F5E84E900986944 /* CanYou3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07592B441F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3" */;
+			buildPhases = (
+				07592B181F5E84E900986944 /* Sources */,
+				07592B191F5E84E900986944 /* Frameworks */,
+				07592B1A1F5E84E900986944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanYou3;
+			productName = CanYou3;
+			productReference = 07592B1C1F5E84E900986944 /* CanYou3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07592B2F1F5E84E900986944 /* CanYou3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07592B471F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3Tests" */;
+			buildPhases = (
+				07592B2C1F5E84E900986944 /* Sources */,
+				07592B2D1F5E84E900986944 /* Frameworks */,
+				07592B2E1F5E84E900986944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07592B321F5E84E900986944 /* PBXTargetDependency */,
+			);
+			name = CanYou3Tests;
+			productName = CanYou3Tests;
+			productReference = 07592B301F5E84E900986944 /* CanYou3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07592B3A1F5E84E900986944 /* CanYou3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07592B4A1F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3UITests" */;
+			buildPhases = (
+				07592B371F5E84E900986944 /* Sources */,
+				07592B381F5E84E900986944 /* Frameworks */,
+				07592B391F5E84E900986944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07592B3D1F5E84E900986944 /* PBXTargetDependency */,
+			);
+			name = CanYou3UITests;
+			productName = CanYou3UITests;
+			productReference = 07592B3B1F5E84E900986944 /* CanYou3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07592B141F5E84E900986944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Eric.Park;
+				TargetAttributes = {
+					07592B1B1F5E84E900986944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RD94QKXJBK;
+						ProvisioningStyle = Automatic;
+					};
+					07592B2F1F5E84E900986944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RD94QKXJBK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07592B1B1F5E84E900986944;
+					};
+					07592B3A1F5E84E900986944 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RD94QKXJBK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07592B1B1F5E84E900986944;
+					};
+				};
+			};
+			buildConfigurationList = 07592B171F5E84E900986944 /* Build configuration list for PBXProject "CanYou3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07592B131F5E84E900986944;
+			productRefGroup = 07592B1D1F5E84E900986944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07592B1B1F5E84E900986944 /* CanYou3 */,
+				07592B2F1F5E84E900986944 /* CanYou3Tests */,
+				07592B3A1F5E84E900986944 /* CanYou3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07592B1A1F5E84E900986944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */,
+				07592B271F5E84E900986944 /* Assets.xcassets in Resources */,
+				07592B251F5E84E900986944 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B2E1F5E84E900986944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B391F5E84E900986944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07592B181F5E84E900986944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07592B221F5E84E900986944 /* ViewController.swift in Sources */,
+				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B2C1F5E84E900986944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07592B351F5E84E900986944 /* CanYou3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07592B371F5E84E900986944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07592B401F5E84E900986944 /* CanYou3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07592B321F5E84E900986944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07592B1B1F5E84E900986944 /* CanYou3 */;
+			targetProxy = 07592B311F5E84E900986944 /* PBXContainerItemProxy */;
+		};
+		07592B3D1F5E84E900986944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07592B1B1F5E84E900986944 /* CanYou3 */;
+			targetProxy = 07592B3C1F5E84E900986944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07592B231F5E84E900986944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07592B241F5E84E900986944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07592B281F5E84E900986944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07592B291F5E84E900986944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07592B421F5E84E900986944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07592B431F5E84E900986944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07592B451F5E84E900986944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07592B461F5E84E900986944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		07592B481F5E84E900986944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanYou3.app/CanYou3";
+			};
+			name = Debug;
+		};
+		07592B491F5E84E900986944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanYou3.app/CanYou3";
+			};
+			name = Release;
+		};
+		07592B4B1F5E84E900986944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanYou3;
+			};
+			name = Debug;
+		};
+		07592B4C1F5E84E900986944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RD94QKXJBK;
+				INFOPLIST_FILE = CanYou3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Eric.Park.CanYou3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CanYou3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07592B171F5E84E900986944 /* Build configuration list for PBXProject "CanYou3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07592B421F5E84E900986944 /* Debug */,
+				07592B431F5E84E900986944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07592B441F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07592B451F5E84E900986944 /* Debug */,
+				07592B461F5E84E900986944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07592B471F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07592B481F5E84E900986944 /* Debug */,
+				07592B491F5E84E900986944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07592B4A1F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07592B4B1F5E84E900986944 /* Debug */,
+				07592B4C1F5E84E900986944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07592B141F5E84E900986944 /* Project object */;
+}
