@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
-		07592B221F5E84E900986944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B211F5E84E900986944 /* ViewController.swift */; };
 		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
 		07592B271F5E84E900986944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07592B261F5E84E900986944 /* Assets.xcassets */; };
 		07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B281F5E84E900986944 /* LaunchScreen.storyboard */; };
 		07592B351F5E84E900986944 /* CanYou3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B341F5E84E900986944 /* CanYou3Tests.swift */; };
 		07592B401F5E84E900986944 /* CanYou3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B3F1F5E84E900986944 /* CanYou3UITests.swift */; };
+		076A59FC1F66ABBC00BCB8F9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */; };
+		076A59FE1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */; };
+		076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */; };
+		076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A021F66B55900BCB8F9 /* DashboardViewController.swift */; };
+		076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */; };
+		076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A081F66B79900BCB8F9 /* BaseViewController.swift */; };
+		076A5A0B1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */; };
+		076A5A121F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */; };
 		5B82F9E7A22FF4336FF51B62 /* Pods_CanYou3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4856FA79EFDFDADAF56E67 /* Pods_CanYou3Tests.framework */; };
 		63337752F685A69C9FCB955E /* Pods_CanYou3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC70830416A71511370FDF73 /* Pods_CanYou3.framework */; };
 		A8B4CA1C9BEFEE355AD77B94 /* Pods_CanYou3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F66DE76832DE524001E5A8B /* Pods_CanYou3UITests.framework */; };
@@ -40,7 +47,6 @@
 		03E2778CE698BFEA55364A7B /* Pods-CanYou3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.debug.xcconfig"; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07592B211F5E84E900986944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07592B241F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07592B261F5E84E900986944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07592B291F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		07592B3B1F5E84E900986944 /* CanYou3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYou3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B3F1F5E84E900986944 /* CanYou3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYou3UITests.swift; sourceTree = "<group>"; };
 		07592B411F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanYouAnimationViewController.swift; sourceTree = "<group>"; };
+		076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		076A5A021F66B55900BCB8F9 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		076A5A081F66B79900BCB8F9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackgroundViewController.swift; sourceTree = "<group>"; };
+		076A5A111F66C1FB00BCB8F9 /* CanYou3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanYou3.xcdatamodel; sourceTree = "<group>"; };
 		07AD25EC08D8512FF8B598B5 /* Pods-CanYou3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.release.xcconfig"; sourceTree = "<group>"; };
 		07FBC6D75670EBE269409A2D /* Pods-CanYou3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29BDFCA2FA63E0BBCAEAFD54 /* Pods-CanYou3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,9 +128,14 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
+				076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */,
+				076A5A131F66C20800BCB8F9 /* Model */,
 				07592B501F5E85C600986944 /* Delegates */,
-				07592B211F5E84E900986944 /* ViewController.swift */,
-				07592B4D1F5E85B100986944 /* Storyboards */,
+				076A5A0C1F66BA6E00BCB8F9 /* Base */,
+				076A5A071F66B67E00BCB8F9 /* Configurations */,
+				076A5A041F66B56400BCB8F9 /* Dashboard */,
+				076A59FF1F66ACA100BCB8F9 /* Main */,
+				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
 				07592B4E1F5E85B900986944 /* Resources */,
 				07592B4F1F5E85BF00986944 /* Supporting Files */,
 			);
@@ -141,15 +160,6 @@
 			path = CanYou3UITests;
 			sourceTree = "<group>";
 		};
-		07592B4D1F5E85B100986944 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				07592B231F5E84E900986944 /* Main.storyboard */,
-				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 		07592B4E1F5E85B900986944 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,49 @@
 				07592B1F1F5E84E900986944 /* AppDelegate.swift */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		076A59FF1F66ACA100BCB8F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */,
+				07592B231F5E84E900986944 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		076A5A041F66B56400BCB8F9 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */,
+				076A5A021F66B55900BCB8F9 /* DashboardViewController.swift */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		076A5A071F66B67E00BCB8F9 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		076A5A0C1F66BA6E00BCB8F9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				076A5A081F66B79900BCB8F9 /* BaseViewController.swift */,
+				076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		076A5A131F66C20800BCB8F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		14341A162D0E2C956DB170B4 /* Pods */ = {
@@ -319,6 +372,7 @@
 				07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */,
 				07592B271F5E84E900986944 /* Assets.xcassets in Resources */,
 				07592B251F5E84E900986944 /* Main.storyboard in Resources */,
+				076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,9 +510,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -490,8 +549,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07592B221F5E84E900986944 /* ViewController.swift in Sources */,
+				076A59FC1F66ABBC00BCB8F9 /* UIViewExtension.swift in Sources */,
+				076A5A0B1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift in Sources */,
+				076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */,
+				076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
+				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
+				076A5A121F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld in Sources */,
+				076A59FE1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +813,7 @@
 				07592B461F5E84E900986944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07592B471F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3Tests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +822,7 @@
 				07592B491F5E84E900986944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07592B4A1F5E84E900986944 /* Build configuration list for PBXNativeTarget "CanYou3UITests" */ = {
 			isa = XCConfigurationList;
@@ -764,8 +831,22 @@
 				07592B4C1F5E84E900986944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				076A5A111F66C1FB00BCB8F9 /* CanYou3.xcdatamodel */,
+			);
+			currentVersion = 076A5A111F66C1FB00BCB8F9 /* CanYou3.xcdatamodel */;
+			path = CanYou3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 07592B141F5E84E900986944 /* Project object */;
 }

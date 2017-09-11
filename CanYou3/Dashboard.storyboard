@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dJU-my-fm7">
+            <objects>
+                <viewController id="nuV-ql-xtG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Uf-jE-llp"/>
+                        <viewControllerLayoutGuide type="bottom" id="RT9-qe-ffw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AM2-wo-1dc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-Hj-JTV">
+                                <rect key="frame" x="16" y="20" width="343" height="601"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="containerView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-Xa-3zJ">
+                                <rect key="frame" x="329" y="629" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mNZ-EK-WF2"/>
+                                    <constraint firstAttribute="width" constant="30" id="z66-Qf-jwB"/>
+                                </constraints>
+                                <state key="normal" image="settings"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UVP-Xa-3zJ" secondAttribute="bottom" constant="8" id="4uF-WO-pae"/>
+                            <constraint firstItem="GeW-Hj-JTV" firstAttribute="leading" secondItem="AM2-wo-1dc" secondAttribute="leadingMargin" id="Gim-cv-xuu"/>
+                            <constraint firstItem="GeW-Hj-JTV" firstAttribute="trailing" secondItem="AM2-wo-1dc" secondAttribute="trailingMargin" id="NSw-tI-WXI"/>
+                            <constraint firstItem="UVP-Xa-3zJ" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="bottom" constant="8" id="PgW-tV-bmi"/>
+                            <constraint firstItem="GeW-Hj-JTV" firstAttribute="top" secondItem="9Uf-jE-llp" secondAttribute="bottom" id="SMf-WO-OPI"/>
+                            <constraint firstAttribute="trailing" secondItem="UVP-Xa-3zJ" secondAttribute="trailing" constant="16" id="YAI-MZ-TMr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lM7-3N-DnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="1000" height="1000"/>
+    </resources>
+</document>
