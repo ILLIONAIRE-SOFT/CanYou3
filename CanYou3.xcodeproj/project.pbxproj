@@ -31,6 +31,26 @@
 		0776967B1F687030000BC687 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696731F687030000BC687 /* User+CoreDataProperties.swift */; };
 		0776967D1F68798E000BC687 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776967C1F68798E000BC687 /* DataController.swift */; };
 		077696801F687C82000BC687 /* CoreDataName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776967F1F687C82000BC687 /* CoreDataName.swift */; };
+		077696841F687FBD000BC687 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696831F687FBD000BC687 /* Settings.storyboard */; };
+		077696871F688106000BC687 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696861F688106000BC687 /* SettingsTableViewController.swift */; };
+		077696891F688130000BC687 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696881F688130000BC687 /* BaseTableViewController.swift */; };
+		0776968B1F688314000BC687 /* SettingName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0776968A1F688314000BC687 /* SettingName.storyboard */; };
+		0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776968C1F688339000BC687 /* SettingNameTableViewController.swift */; };
+		0776968F1F688351000BC687 /* SettingGender.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0776968E1F688351000BC687 /* SettingGender.storyboard */; };
+		077696911F68837B000BC687 /* SettingBirthDate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696901F68837B000BC687 /* SettingBirthDate.storyboard */; };
+		077696931F68839B000BC687 /* SettingStartDate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696921F68839B000BC687 /* SettingStartDate.storyboard */; };
+		077696951F6883C2000BC687 /* SettingAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696941F6883C2000BC687 /* SettingAlarm.storyboard */; };
+		077696971F6883E8000BC687 /* SettingCigaretteDaily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696961F6883E8000BC687 /* SettingCigaretteDaily.storyboard */; };
+		077696991F688404000BC687 /* SettingCigarettePrice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696981F688404000BC687 /* SettingCigarettePrice.storyboard */; };
+		0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776969C1F6884FF000BC687 /* SettingGenderTableViewController.swift */; };
+		0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776969E1F688538000BC687 /* SettingBirthDateTableViewController.swift */; };
+		077696A11F688578000BC687 /* SettingStartDateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A01F688578000BC687 /* SettingStartDateTableViewController.swift */; };
+		077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A21F68859F000BC687 /* SettingVersionTableViewController.swift */; };
+		077696A51F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A41F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift */; };
+		077696A71F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A61F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift */; };
+		077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */; };
+		077696AB1F688750000BC687 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696AA1F688750000BC687 /* AnimationController.swift */; };
+		077696AD1F688A95000BC687 /* SettingVersion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696AC1F688A95000BC687 /* SettingVersion.storyboard */; };
 		5B82F9E7A22FF4336FF51B62 /* Pods_CanYou3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4856FA79EFDFDADAF56E67 /* Pods_CanYou3Tests.framework */; };
 		63337752F685A69C9FCB955E /* Pods_CanYou3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC70830416A71511370FDF73 /* Pods_CanYou3.framework */; };
 		A8B4CA1C9BEFEE355AD77B94 /* Pods_CanYou3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F66DE76832DE524001E5A8B /* Pods_CanYou3UITests.framework */; };
@@ -56,11 +76,11 @@
 /* Begin PBXFileReference section */
 		03E2778CE698BFEA55364A7B /* Pods-CanYou3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.debug.xcconfig"; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CanYou3/AppDelegate.swift; sourceTree = "<group>"; };
 		07592B241F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07592B261F5E84E900986944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07592B291F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07592B2B1F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07592B2B1F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CanYou3/Info.plist; sourceTree = "<group>"; };
 		07592B301F5E84E900986944 /* CanYou3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYou3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B341F5E84E900986944 /* CanYou3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYou3Tests.swift; sourceTree = "<group>"; };
 		07592B361F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +105,26 @@
 		077696731F687030000BC687 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0776967C1F68798E000BC687 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0776967F1F687C82000BC687 /* CoreDataName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataName.swift; sourceTree = "<group>"; };
+		077696831F687FBD000BC687 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		077696861F688106000BC687 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		077696881F688130000BC687 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		0776968A1F688314000BC687 /* SettingName.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingName.storyboard; sourceTree = "<group>"; };
+		0776968C1F688339000BC687 /* SettingNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNameTableViewController.swift; sourceTree = "<group>"; };
+		0776968E1F688351000BC687 /* SettingGender.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingGender.storyboard; sourceTree = "<group>"; };
+		077696901F68837B000BC687 /* SettingBirthDate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingBirthDate.storyboard; sourceTree = "<group>"; };
+		077696921F68839B000BC687 /* SettingStartDate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingStartDate.storyboard; sourceTree = "<group>"; };
+		077696941F6883C2000BC687 /* SettingAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingAlarm.storyboard; sourceTree = "<group>"; };
+		077696961F6883E8000BC687 /* SettingCigaretteDaily.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingCigaretteDaily.storyboard; sourceTree = "<group>"; };
+		077696981F688404000BC687 /* SettingCigarettePrice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingCigarettePrice.storyboard; sourceTree = "<group>"; };
+		0776969C1F6884FF000BC687 /* SettingGenderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingGenderTableViewController.swift; sourceTree = "<group>"; };
+		0776969E1F688538000BC687 /* SettingBirthDateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingBirthDateTableViewController.swift; sourceTree = "<group>"; };
+		077696A01F688578000BC687 /* SettingStartDateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingStartDateTableViewController.swift; sourceTree = "<group>"; };
+		077696A21F68859F000BC687 /* SettingVersionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVersionTableViewController.swift; sourceTree = "<group>"; };
+		077696A41F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCigaretteDailyTableViewController.swift; sourceTree = "<group>"; };
+		077696A61F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCigarettePriceTableViewController.swift; sourceTree = "<group>"; };
+		077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
+		077696AA1F688750000BC687 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		077696AC1F688A95000BC687 /* SettingVersion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingVersion.storyboard; sourceTree = "<group>"; };
 		07AD25EC08D8512FF8B598B5 /* Pods-CanYou3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.release.xcconfig"; sourceTree = "<group>"; };
 		07FBC6D75670EBE269409A2D /* Pods-CanYou3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29BDFCA2FA63E0BBCAEAFD54 /* Pods-CanYou3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,17 +188,13 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
-				0776967E1F6879A6000BC687 /* Controller */,
-				076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */,
 				076A5A131F66C20800BCB8F9 /* Model */,
-				07592B501F5E85C600986944 /* Delegates */,
 				076A5A0C1F66BA6E00BCB8F9 /* Base */,
-				076A5A071F66B67E00BCB8F9 /* Configurations */,
 				076A5A041F66B56400BCB8F9 /* Dashboard */,
+				077696851F687FC6000BC687 /* Settings */,
 				076A59FF1F66ACA100BCB8F9 /* Main */,
-				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
-				07592B4E1F5E85B900986944 /* Resources */,
-				07592B4F1F5E85BF00986944 /* Supporting Files */,
+				0776967E1F6879A6000BC687 /* Controller */,
+				077696821F687EE9000BC687 /* Supoorting Files */,
 			);
 			path = CanYou3;
 			sourceTree = "<group>";
@@ -187,22 +223,7 @@
 				07592B261F5E84E900986944 /* Assets.xcassets */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		07592B4F1F5E85BF00986944 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				07592B2B1F5E84E900986944 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		07592B501F5E85C600986944 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				07592B1F1F5E84E900986944 /* AppDelegate.swift */,
-			);
-			name = Delegates;
+			path = CanYou3;
 			sourceTree = "<group>";
 		};
 		076A59FF1F66ACA100BCB8F9 /* Main */ = {
@@ -230,12 +251,14 @@
 				0776967F1F687C82000BC687 /* CoreDataName.swift */,
 			);
 			name = Configurations;
+			path = CanYou3;
 			sourceTree = "<group>";
 		};
 		076A5A0C1F66BA6E00BCB8F9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				076A5A081F66B79900BCB8F9 /* BaseViewController.swift */,
+				077696881F688130000BC687 /* BaseTableViewController.swift */,
 				076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */,
 			);
 			name = Base;
@@ -260,9 +283,74 @@
 		0776967E1F6879A6000BC687 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				077696AA1F688750000BC687 /* AnimationController.swift */,
 				0776967C1F68798E000BC687 /* DataController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		077696811F687E7E000BC687 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			path = CanYou3;
+			sourceTree = "<group>";
+		};
+		077696821F687EE9000BC687 /* Supoorting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07592B4E1F5E85B900986944 /* Resources */,
+				076A5A071F66B67E00BCB8F9 /* Configurations */,
+				077696811F687E7E000BC687 /* Extensions */,
+				07592B1F1F5E84E900986944 /* AppDelegate.swift */,
+				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
+				07592B2B1F5E84E900986944 /* Info.plist */,
+			);
+			name = "Supoorting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		077696851F687FC6000BC687 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0776969B1F688433000BC687 /* ViewControllers */,
+				0776969A1F688426000BC687 /* Storyboards */,
+				077696861F688106000BC687 /* SettingsTableViewController.swift */,
+				077696831F687FBD000BC687 /* Settings.storyboard */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		0776969A1F688426000BC687 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				077696AC1F688A95000BC687 /* SettingVersion.storyboard */,
+				0776968A1F688314000BC687 /* SettingName.storyboard */,
+				0776968E1F688351000BC687 /* SettingGender.storyboard */,
+				077696901F68837B000BC687 /* SettingBirthDate.storyboard */,
+				077696941F6883C2000BC687 /* SettingAlarm.storyboard */,
+				077696961F6883E8000BC687 /* SettingCigaretteDaily.storyboard */,
+				077696981F688404000BC687 /* SettingCigarettePrice.storyboard */,
+				077696921F68839B000BC687 /* SettingStartDate.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0776969B1F688433000BC687 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0776968C1F688339000BC687 /* SettingNameTableViewController.swift */,
+				0776969C1F6884FF000BC687 /* SettingGenderTableViewController.swift */,
+				0776969E1F688538000BC687 /* SettingBirthDateTableViewController.swift */,
+				077696A01F688578000BC687 /* SettingStartDateTableViewController.swift */,
+				077696A21F68859F000BC687 /* SettingVersionTableViewController.swift */,
+				077696A41F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift */,
+				077696A61F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift */,
+				077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		14341A162D0E2C956DB170B4 /* Pods */ = {
@@ -407,10 +495,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077696AD1F688A95000BC687 /* SettingVersion.storyboard in Resources */,
+				0776968B1F688314000BC687 /* SettingName.storyboard in Resources */,
+				077696951F6883C2000BC687 /* SettingAlarm.storyboard in Resources */,
 				07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */,
 				07592B271F5E84E900986944 /* Assets.xcassets in Resources */,
+				077696991F688404000BC687 /* SettingCigarettePrice.storyboard in Resources */,
+				0776968F1F688351000BC687 /* SettingGender.storyboard in Resources */,
 				07592B251F5E84E900986944 /* Main.storyboard in Resources */,
+				077696911F68837B000BC687 /* SettingBirthDate.storyboard in Resources */,
 				076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */,
+				077696841F687FBD000BC687 /* Settings.storyboard in Resources */,
+				077696931F68839B000BC687 /* SettingStartDate.storyboard in Resources */,
+				077696971F6883E8000BC687 /* SettingCigaretteDaily.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,22 +686,33 @@
 			files = (
 				076A59FC1F66ABBC00BCB8F9 /* UIViewExtension.swift in Sources */,
 				076A5A0B1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift in Sources */,
+				077696891F688130000BC687 /* BaseTableViewController.swift in Sources */,
 				0776967B1F687030000BC687 /* User+CoreDataProperties.swift in Sources */,
 				077696751F687030000BC687 /* Reward+CoreDataProperties.swift in Sources */,
+				077696A11F688578000BC687 /* SettingStartDateTableViewController.swift in Sources */,
 				077696741F687030000BC687 /* Reward+CoreDataClass.swift in Sources */,
+				077696A51F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift in Sources */,
+				077696AB1F688750000BC687 /* AnimationController.swift in Sources */,
+				077696A71F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift in Sources */,
 				076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */,
+				0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */,
 				076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */,
+				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
 				0776967D1F68798E000BC687 /* DataController.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
+				077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */,
 				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
 				076A5A121F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld in Sources */,
 				077696781F687030000BC687 /* Badge+CoreDataClass.swift in Sources */,
 				076A59FE1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift in Sources */,
 				077696761F687030000BC687 /* HealthInfo+CoreDataClass.swift in Sources */,
 				077696771F687030000BC687 /* HealthInfo+CoreDataProperties.swift in Sources */,
+				077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */,
 				077696791F687030000BC687 /* Badge+CoreDataProperties.swift in Sources */,
+				077696871F688106000BC687 /* SettingsTableViewController.swift in Sources */,
 				0776967A1F687030000BC687 /* User+CoreDataClass.swift in Sources */,
 				077696801F687C82000BC687 /* CoreDataName.swift in Sources */,
+				0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +762,7 @@
 				07592B291F5E84E900986944 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = CanYou3;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

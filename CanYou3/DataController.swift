@@ -11,7 +11,9 @@ import CoreData
 
 class DataController: NSObject {
     // MARK: Singleton
-    static let shared = DataController()
+    static let shared = DataController(){
+        // Additional Code
+    }
     
     // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer = {
@@ -75,7 +77,6 @@ class DataController: NSObject {
     }
     
     // MARK: - Core Data Saving support
-    
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

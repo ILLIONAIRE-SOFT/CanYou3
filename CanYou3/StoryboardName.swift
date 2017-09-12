@@ -12,4 +12,11 @@ struct StoryboardName {
     static let main = "Main"
     static let launchScreen = "LaunchScreen"
     static let dashboard = "Dashboard"
+    static let settings = "Settings"
+    
+    static let settingsStoryboards: [[String]] = [
+        ["SettingName", "SettingGender", "SettingBirthDate", "SettingStartDate", "HealthInfo"],
+        ["SettingAlarm", "SettingCigaretteDaily", "SettingCigarettePrice"],
+        ["SettingVersion"]
+    ]
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting Name Table View Controller-->
+        <scene sceneID="z1X-fb-TkD">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingNameTableViewController" id="0e9-BP-GvO" customClass="SettingNameTableViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BVc-us-a49">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Name" id="K62-O3-Dn8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zlf-cR-bwi">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zlf-cR-bwi" id="PS0-sd-Q3v">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="박현민" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-6O-aQA">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eS0-6O-aQA" secondAttribute="bottom" constant="8" id="PqN-cg-953"/>
+                                                <constraint firstAttribute="trailing" secondItem="eS0-6O-aQA" secondAttribute="trailing" constant="8" id="UKt-fN-aIV"/>
+                                                <constraint firstItem="eS0-6O-aQA" firstAttribute="top" secondItem="PS0-sd-Q3v" secondAttribute="top" constant="8" id="b5r-Y2-JSH"/>
+                                                <constraint firstItem="eS0-6O-aQA" firstAttribute="leading" secondItem="PS0-sd-Q3v" secondAttribute="leading" constant="8" id="kyJ-zX-0lU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0e9-BP-GvO" id="fij-Lw-CTk"/>
+                            <outlet property="delegate" destination="0e9-BP-GvO" id="RsH-Ay-J0N"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6vc-Yk-CCO">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="5oU-Au-5kd">
+                            <connections>
+                                <action selector="saveTapped:" destination="0e9-BP-GvO" id="FK3-jn-l53"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="eS0-6O-aQA" id="pFS-mp-rZ1"/>
+                        <outlet property="saveButton" destination="5oU-Au-5kd" id="yDK-qj-OfZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Or-yX-52I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="550"/>
+        </scene>
+    </scenes>
+</document>

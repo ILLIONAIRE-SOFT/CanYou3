@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting Start Date Table View Controller-->
+        <scene sceneID="DH2-ce-Ssd">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingStartDateTableViewController" id="if1-fa-SJl" customClass="SettingStartDateTableViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jFX-vq-kGO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Start date" id="UVH-7D-5wF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="6L1-Yq-LuM">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6L1-Yq-LuM" id="eR7-zy-gbl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0kl-MC-KLI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="524874012.74091798">
+                                                        <!--2017-08-19 22:20:12 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0kl-MC-KLI" secondAttribute="trailing" id="1pt-QM-R4w"/>
+                                                <constraint firstItem="0kl-MC-KLI" firstAttribute="top" secondItem="eR7-zy-gbl" secondAttribute="top" id="62w-lp-4dQ"/>
+                                                <constraint firstItem="0kl-MC-KLI" firstAttribute="leading" secondItem="eR7-zy-gbl" secondAttribute="leading" id="Siz-Pq-mAI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="if1-fa-SJl" id="Xys-BU-G8s"/>
+                            <outlet property="delegate" destination="if1-fa-SJl" id="KGQ-Ar-BZD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ver-dD-Jc2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="k8B-9t-UPj">
+                            <connections>
+                                <action selector="saveTapped:" destination="if1-fa-SJl" id="mu4-I3-3tB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="0kl-MC-KLI" id="cVM-Zg-oDI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXp-Fk-Tb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="-636"/>
+        </scene>
+    </scenes>
+</document>

@@ -15,7 +15,7 @@ import Then
 class BaseViewController: UIViewController {
     // let realm = try! Realm()
     // var currentUser = DataController.shared.currentUser
-    // var dataController = DataController.shared
+    var dc = DataController.shared
     
     // MARK : Memory Management
     override func didReceiveMemoryWarning() {
@@ -46,6 +46,12 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.hideKeyboardWhenTappedAround()
+    }
+    
+    // MARK : Animation
+    func openWith(transition: CATransition, viewController: UIViewController) {
+        navigationController?.view.layer.add(transition, forKey: nil)
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     // MARK : Methods for Keyboard
