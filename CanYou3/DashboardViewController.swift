@@ -18,3 +18,24 @@ class DashboardViewController: BaseBackgroundViewController {
         self.openWith(transition: transition, viewController: vc)
     }
 }
+
+// MARK: - Hide NavigationBar only for this ViewController
+extension DashboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let navigationController = self.navigationController {
+            // Hide the navigation bar on the this view controller
+            self.navigationController.setNavigationBarHidden(true, animated: animated)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if let navigationController = self.navigationController {
+            // Show the navigation bar on other view controllers
+            self.navigationController.setNavigationBarHidden(false, animated: animated)
+        }
+    }
+}
