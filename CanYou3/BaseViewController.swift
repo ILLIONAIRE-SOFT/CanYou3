@@ -51,7 +51,7 @@ class BaseViewController: UIViewController {
     // MARK : Animation
     func openWith(transition: CATransition, viewController: UIViewController) {
         navigationController?.view.layer.add(transition, forKey: nil)
-        navigationController?.pushViewController(vc, animated: false)
+        navigationController?.pushViewController(viewController, animated: false)
     }
     
     // MARK : Methods for Keyboard
