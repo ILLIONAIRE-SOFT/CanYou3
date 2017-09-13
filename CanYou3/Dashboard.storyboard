@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ABZ-FI-FYf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="dJU-my-fm7">
             <objects>
-                <viewController id="nuV-ql-xtG" sceneMemberID="viewController">
+                <viewController id="nuV-ql-xtG" customClass="DashboardViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Uf-jE-llp"/>
                         <viewControllerLayoutGuide type="bottom" id="RT9-qe-ffw"/>
@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="width" constant="30" id="z66-Qf-jwB"/>
                                 </constraints>
                                 <state key="normal" image="settings"/>
+                                <connections>
+                                    <action selector="settingButtonTapped:" destination="nuV-ql-xtG" eventType="touchUpInside" id="qs3-gr-fm6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

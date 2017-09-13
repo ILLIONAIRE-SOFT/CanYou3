@@ -24,7 +24,7 @@ class SettingNameTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        nameTextField.placeholder = currentUser.name
+//        nameTextField.placeholder = currentUser.name
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {

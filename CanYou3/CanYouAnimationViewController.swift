@@ -20,20 +20,19 @@ class CanYouAnimationViewController: BaseViewController {
         })
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.7, execute: {
-            // Load Storyboard
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            
             // Instantiate View Controller
-            var viewController: UIViewController!
+            let vc: UIViewController!
 //            if dataController.currentUser.isNew {
 //                viewController = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
 //            } else {
 //                viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
 //            }
             
-            viewController.modalTransitionStyle = .crossDissolve
+            vc = viewController(forStoryboardName: StoryboardName.dashboard)
             
-            self.present(viewController, animated: true, completion: nil)
+            vc.modalTransitionStyle = .crossDissolve
+            
+            self.present(vc, animated: true, completion: nil)
         })
         
     }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DA1F694F3900A03E11 /* EntityName.swift */; };
+		0701B3DD1F69517700A03E11 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */; };
+		0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */; };
 		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
 		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
 		07592B271F5E84E900986944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07592B261F5E84E900986944 /* Assets.xcassets */; };
@@ -75,6 +78,9 @@
 
 /* Begin PBXFileReference section */
 		03E2778CE698BFEA55364A7B /* Pods-CanYou3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.debug.xcconfig"; sourceTree = "<group>"; };
+		0701B3DA1F694F3900A03E11 /* EntityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityName.swift; sourceTree = "<group>"; };
+		0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
+		0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMethod.swift; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CanYou3/AppDelegate.swift; sourceTree = "<group>"; };
 		07592B241F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 			children = (
 				076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */,
 				07592B231F5E84E900986944 /* Main.storyboard */,
+				0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -247,6 +254,7 @@
 		076A5A071F66B67E00BCB8F9 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				0701B3DA1F694F3900A03E11 /* EntityName.swift */,
 				076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */,
 				0776967F1F687C82000BC687 /* CoreDataName.swift */,
 			);
@@ -293,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */,
+				0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */,
 			);
 			name = Extensions;
 			path = CanYou3;
@@ -697,6 +706,7 @@
 				076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */,
 				0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */,
 				076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */,
+				0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */,
 				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
 				0776967D1F68798E000BC687 /* DataController.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
@@ -710,9 +720,11 @@
 				077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */,
 				077696791F687030000BC687 /* Badge+CoreDataProperties.swift in Sources */,
 				077696871F688106000BC687 /* SettingsTableViewController.swift in Sources */,
+				0701B3DD1F69517700A03E11 /* CigaretteDailyViewController.swift in Sources */,
 				0776967A1F687030000BC687 /* User+CoreDataClass.swift in Sources */,
 				077696801F687C82000BC687 /* CoreDataName.swift in Sources */,
 				0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */,
+				0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
