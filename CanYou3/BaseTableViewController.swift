@@ -36,8 +36,4 @@ class BaseTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func closeWith(transition: CATransition){
-        navigationController?.view.layer.add(transition, forKey: nil)
-        navigationController?.popViewController(animated: false)
-    }
 }

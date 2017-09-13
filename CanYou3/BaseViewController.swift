@@ -48,12 +48,6 @@ class BaseViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
     }
     
-    // MARK : Animation
-    func openWith(transition: CATransition, viewController: UIViewController) {
-        navigationController?.view.layer.add(transition, forKey: nil)
-        navigationController?.pushViewController(viewController, animated: false)
-    }
-    
     // MARK : Methods for Keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -63,6 +57,15 @@ class BaseViewController: UIViewController {
     
     func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    // MARK : Alert suppoert
+    func presentMessageBox(_ message: String) {
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        sheet.message = message
+        let okAction = UIAlertAction(title: "Confirm", style: .default, handler: nil)
+        sheet.addAction(okAction)
+        self.present(sheet, animated: true, completion: nil)
     }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wZR-gv-LWs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Setting Gender Table View Controller-->
         <scene sceneID="vC9-0n-AKq">
             <objects>
-                <tableViewController storyboardIdentifier="SettingGenderTableViewController" id="wZR-gv-LWs" customClass="SettingGenderTableViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingGenderTableViewController" id="wZR-gv-LWs" customClass="SettingGenderTableViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="B59-ua-oJ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                             <tableViewSection headerTitle="Gender" id="UWw-vZ-AC0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="j84-y9-0Ap">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j84-y9-0Ap" id="tlY-hQ-Ad6">
                                             <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
@@ -44,7 +44,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="btC-rO-wvr">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="btC-rO-wvr" id="kM4-1U-LVp">
                                             <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
@@ -75,8 +75,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="pME-bi-8FY"/>
                     <connections>
-                        <outlet property="femaleCell" destination="btC-rO-wvr" id="XvS-Aa-wmC"/>
-                        <outlet property="maleCell" destination="j84-y9-0Ap" id="33Q-H9-uXX"/>
+                        <outlet property="femaleCell" destination="btC-rO-wvr" id="ZpK-h3-hbY"/>
+                        <outlet property="maleCell" destination="j84-y9-0Ap" id="l7W-pW-xL7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXE-dq-BJh" userLabel="First Responder" sceneMemberID="firstResponder"/>

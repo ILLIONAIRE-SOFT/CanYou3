@@ -24,8 +24,7 @@ class SettingsTableViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: vc, action: #selector(closeButtonTapped(_:)))
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: vc, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,4 +73,10 @@ class SettingsTableViewController: BaseTableViewController {
         self.closeWith(transition: transition)
     }
     
+    func closeWith(transition: CATransition){
+        if let nc = self.navigationController {
+            nc.view.layer.add(transition, forKey: nil)
+            nc.popViewController(animated: false)
+        }
+    }
 }

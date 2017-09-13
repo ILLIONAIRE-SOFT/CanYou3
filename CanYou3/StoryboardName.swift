@@ -12,11 +12,27 @@ struct StoryboardName {
     static let main = "Main"
     static let launchScreen = "LaunchScreen"
     static let dashboard = "Dashboard"
-    static let settings = "Settings"
     
-    static let settingsStoryboards: [[String]] = [
-        ["SettingName", "SettingGender", "SettingBirthDate", "SettingStartDate", "HealthInfo"],
-        ["SettingAlarm", "SettingCigaretteDaily", "SettingCigarettePrice"],
-        ["SettingVersion"]
-    ]
+    // MARK : - Settings
+    static let settings = "Settings"
+    static let settingsName = "SettingName"
+    static let settingsGender = "SettingGender"
+    static let settingsBirthDate = "SettingBirthDate"
+    static let settingsStartDate = "SettingStartDate"
+    static let healthInfo = "HealthInfo"
+    static let settingsAlarm = "SettingAlarm"
+    static let settingsCigaretteDaily = "SettingCigaretteDaily"
+    static let settingsCigarettePrice = "SettingCigarettePrice"
+    static let settingsVersion = "SettingVersion"
+    
+    static var settingsStoryboards: [[String]] {
+        get {
+            return
+                [
+                    [self.settingsName, self.settingsGender, self.settingsBirthDate, self.settingsStartDate, self.healthInfo],
+                    [self.settingsAlarm, self.settingsCigaretteDaily, self.settingsCigarettePrice],
+                    [self.settingsVersion]
+                ]
+        }
+    }
 }

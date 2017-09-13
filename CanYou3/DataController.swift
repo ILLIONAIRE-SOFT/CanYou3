@@ -90,4 +90,12 @@ class DataController: NSObject {
             }
         }
     }
+    
+    // MARK: - Initiate Model support
+    func newUser() -> User {
+        let e = NSEntityDescription.insertNewObject(forEntityName: EntityName.user, into: managedObjectContext) as! User
+        return e
+    }
+    
+    
 }
