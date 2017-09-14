@@ -15,8 +15,8 @@ class SettingsTableViewController: BaseTableViewController {
     // MARK : - Properties
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var genderLabel: UILabel!
-    @IBOutlet var birthLabel: UILabel!
-    @IBOutlet var startdateLabel: UILabel!
+    @IBOutlet var birthDateLabel: UILabel!
+    @IBOutlet var startDateLabel: UILabel!
     @IBOutlet var versionLabel: UILabel!
     @IBOutlet var alarmLabel: UILabel!
     @IBOutlet var cigaretteDailyLabel: UILabel!
@@ -24,7 +24,7 @@ class SettingsTableViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,8 +33,6 @@ class SettingsTableViewController: BaseTableViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-//        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomLayoutGuide.length, right: 0)
-//        tableView.scrollIndicatorInsets = tableView.contentInset
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -44,39 +42,32 @@ class SettingsTableViewController: BaseTableViewController {
             
             // iOS bug: https://github.com/lkzhao/Hero/issues/106 https://github.com/lkzhao/Hero/issues/79
             DispatchQueue.main.async {
-                self.present(vc, animated: true, completion: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        nameLabel.text = currentUser.name
-//        genderLabel.text = currentUser.gender
-//        birthLabel.text = dataController.dateFormatter.string(from: currentUser.birth)
-//        startdateLabel.text = dataController.dateFormatter.string(from: currentUser.startDate)
-//        versionLabel.text = dataController.version
-//        if currentUser.alarm {
-//            alarmLabel.text = "On"
-//        } else {
-//            alarmLabel.text = "Off"
-//        }
-//        cigaretteDailyLabel.text = String(currentUser.cigaretteDaily)
-//        let numberFormatter = NumberFormatter()
-//        numberFormatter.numberStyle = .decimal
-//        cigarettePriceLabel.text = numberFormatter.string(from: NSNumber(value:currentUser.cigarettePrice))!
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        nameLabel.text = dc.currentUser.name
+        genderLabel.text = dc.currentUser.gender
+        startDateLabel.text = Formatter.string(fromDate: dc.currentUser.startDate!)
+        birthDateLabel.text = Formatter.string(fromDate: dc.currentUser.birthDate!)
+        versionLabel.text = Versions.latest.version
+        if dc.currentUser.alarm {
+            alarmLabel.text = "On"
+        } else {
+            alarmLabel.text = "Off"
+        }
+        cigaretteDailyLabel.text = String(dc.currentUser.cigaretteDaily)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        cigarettePriceLabel.text = numberFormatter.string(from: NSNumber(value: dc.currentUser.cigarettePrice))!
+    }
     
     @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
         let transition = AnimationController.popDownTransition
         self.closeWith(transition: transition)
-    }
-    
-    func closeWith(transition: CATransition){
-        if let nc = self.navigationController {
-            nc.view.layer.add(transition, forKey: nil)
-            nc.popViewController(animated: false)
-        }
     }
 }

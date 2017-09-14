@@ -26,33 +26,27 @@ class SettingAlarmTableViewController: BaseTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        randomAlarmSwitch.isOn = currentUser.randomAlarm
-//        alarmSwitch.isOn = currentUser.alarm
+        randomAlarmSwitch.isOn = dc.currentUser.randomAlarm
+        alarmSwitch.isOn = dc.currentUser.alarm
     }
     
     @IBAction func alarmSwitchValueChanged(_ sender: UISwitch) {
-//        try! realm.write {
-//            currentUser.alarm = sender.isOn
-//        }
-//        
-//        // alarm on, off
-//        switch sender.isOn {
-//        case true:
-//            randomAlarmSwitch.isEnabled = true
-//            // alarm on!
-//            notificationController.updateNotifications()
-//        case false:
-//            randomAlarmSwitch.isEnabled = false
-//            // all alarm off !
-//            notificationController.removeAllScheduledNotification()
-//        }
+        // alarm on, off
+        switch sender.isOn {
+        case true:
+            randomAlarmSwitch.isEnabled = true
+            // alarm on!
+            // notificationController.updateNotifications()
+        case false:
+            randomAlarmSwitch.isEnabled = false
+            // all alarm off !
+            // notificationController.removeAllScheduledNotification()
+        }
+        
+        dc.currentUser.alarm = sender.isOn
     }
     
     @IBAction func randomAlarmSwitchValueChanged(_ sender: UISwitch) {
-//        try! realm.write {
-//            currentUser.randomAlarm = sender.isOn
-//        }
-//        
 //        // random alarm on, off
 //        switch sender.isOn {
 //        case true:
@@ -62,5 +56,7 @@ class SettingAlarmTableViewController: BaseTableViewController {
 //            // random alarm off !
 //            notificationController.removeAllScheduledNotification()
 //        }
+        
+        dc.currentUser.randomAlarm = sender.isOn
     }
 }

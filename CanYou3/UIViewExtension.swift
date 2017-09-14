@@ -18,6 +18,7 @@ public extension UIView {
         
         set {
             layer.cornerRadius = newValue
+            self.setNeedsLayout()
         }
     }
     @IBInspectable public var shadowRadius: CGFloat {
@@ -27,6 +28,7 @@ public extension UIView {
         
         set {
             layer.shadowRadius = newValue
+            self.setNeedsLayout()
         }
     }
     @IBInspectable public var shadowOpacity: Float {
@@ -36,6 +38,7 @@ public extension UIView {
         
         set {
             layer.shadowOpacity = newValue
+            self.setNeedsLayout()
         }
     }
     @IBInspectable public var shadowColor: UIColor? {
@@ -45,6 +48,7 @@ public extension UIView {
         
         set {
             layer.shadowColor = newValue?.cgColor
+            self.setNeedsLayout()
         }
     }
     @IBInspectable public var shadowOffset: CGSize {
@@ -54,6 +58,7 @@ public extension UIView {
         
         set {
             layer.shadowOffset = newValue
+            self.setNeedsLayout()
         }
     }
     @IBInspectable public var zPosition: CGFloat {
@@ -63,6 +68,7 @@ public extension UIView {
         
         set {
             layer.zPosition = newValue
+            self.setNeedsLayout()
         }
     }
     
@@ -73,6 +79,7 @@ public extension UIView {
         
         set {
             self.clipsToBounds = newValue
+            self.setNeedsLayout()
         }
     }
     

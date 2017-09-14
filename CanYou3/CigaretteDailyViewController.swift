@@ -26,12 +26,10 @@ class CigaretteDailyViewController: BaseBackgroundViewController {
             presentMessageBox("Must be bigger than 0 !")
             return
         }
-//        try! realm.write {
-//            let currentUser = dataController.currentUser
-//            currentUser.cigaretteDaily = Int(text)!
-//            currentUser.startDate = Date()
-//            currentUser.isNew = false
-//        }
+        dc.currentUser.cigaretteDaily = Int16(text)!
+        dc.currentUser.startDate = NSDate()
+        dc.saveContext()
+        
         let vc = viewController(forStoryboardName: StoryboardName.dashboard)
         
         present(vc, animated: true, completion: nil)

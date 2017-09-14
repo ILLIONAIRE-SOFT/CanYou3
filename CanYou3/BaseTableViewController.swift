@@ -9,7 +9,7 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController {
-    var dc = DataController.shared
+    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -18,7 +18,7 @@ class BaseTableViewController: UITableViewController {
     // MARK : - View Life Cycle
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomLayoutGuide.length, right: 0)
+        // tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomLayoutGuide.length, right: 0)
         tableView.scrollIndicatorInsets = tableView.contentInset
     }
     
@@ -32,8 +32,15 @@ class BaseTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        super.tableView(tableView, didSelectRowAt: indexPath)
+        super.tableView(tableView, didSelectRowAt: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    // MARK : - Animation
+    func closeWith(transition: CATransition){
+        if let nc = self.navigationController {
+            nc.view.layer.add(transition, forKey: nil)
+            nc.popViewController(animated: false)
+        }
+    }
 }

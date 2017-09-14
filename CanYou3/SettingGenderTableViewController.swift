@@ -28,33 +28,33 @@ class SettingGenderTableViewController: BaseTableViewController {
     }
     
     func setCheckmark() {
-//        switch currentUser.gender {
-//        case "Male":
-//            maleCell.accessoryType = .checkmark
-//            femaleCell.accessoryType = .none
-//        case "Female":
-//            maleCell.accessoryType = .none
-//            femaleCell.accessoryType = .checkmark
-//        default:
-//            maleCell.accessoryType = .checkmark
-//            femaleCell.accessoryType = .none
-//        }
+        switch dc.currentUser.gender! {
+        case "Male":
+            maleCell.accessoryType = .checkmark
+            femaleCell.accessoryType = .none
+        case "Female":
+            maleCell.accessoryType = .none
+            femaleCell.accessoryType = .checkmark
+        default:
+            maleCell.accessoryType = .checkmark
+            femaleCell.accessoryType = .none
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         super.tableView(tableView, didSelectRowAt: indexPath)
         
-//        try! realm.write {
-//            switch indexPath.row {
-//            case 0:
-//                currentUser.gender = "Male"
-//            case 1:
-//                currentUser.gender = "Female"
-//            default:
-//                break
-//            }
-//        }
         
+        switch indexPath.row {
+        case 0:
+            dc.currentUser.gender = "Male"
+        case 1:
+            dc.currentUser.gender = "Female"
+        default:
+            break
+        }
+        
+        dc.saveContext()
         setCheckmark()
     }
 }

@@ -22,14 +22,14 @@ class SettingCigaretteDailyTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        textField.placeholder = String(currentUser.cigaretteDaily)
+        textField.placeholder = String(dc.currentUser.cigaretteDaily)
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem){
         
-//        if let value = Int(textField.text ?? "0") {
-//            currentUser.cigaretteDaily = value
-//        }
+        if let value = Int16(textField.text ?? "0") {
+            dc.currentUser.cigaretteDaily = value
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }

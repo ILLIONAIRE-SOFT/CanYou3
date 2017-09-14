@@ -15,7 +15,7 @@ import Then
 class BaseViewController: UIViewController {
     // let realm = try! Realm()
     // var currentUser = DataController.shared.currentUser
-    var dc = DataController.shared
+    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
     
     // MARK : Memory Management
     override func didReceiveMemoryWarning() {
@@ -66,6 +66,14 @@ class BaseViewController: UIViewController {
         let okAction = UIAlertAction(title: "Confirm", style: .default, handler: nil)
         sheet.addAction(okAction)
         self.present(sheet, animated: true, completion: nil)
+    }
+    
+    // MARK : Animation
+    func presentWith(transition: CATransition, viewController: UIViewController){
+        if let nc = self.navigationController {
+            nc.view.layer.add(transition, forKey: nil)
+            nc.pushViewController(viewController, animated: false)
+        }
     }
 }
 

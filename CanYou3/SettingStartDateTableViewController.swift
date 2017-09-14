@@ -22,11 +22,14 @@ class SettingStartDateTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        datePicker.date = currentUser.startDate
+        if let date = dc.currentUser.startDate {
+            datePicker.date = date as Date
+        }
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-//        currentUser.startDate = datePicker.date
+        dc.currentUser.startDate = datePicker.date as NSDate
+        dc.saveContext()
         self.navigationController?.popViewController(animated: true)
     }
 }

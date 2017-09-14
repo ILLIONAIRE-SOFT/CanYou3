@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-Hj-JTV">
-                                <rect key="frame" x="16" y="64" width="343" height="557"/>
+                                <rect key="frame" x="16" y="20" width="343" height="583"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -34,23 +35,44 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-Xa-3zJ">
-                                <rect key="frame" x="329" y="629" width="30" height="30"/>
+                                <rect key="frame" x="319" y="619" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mNZ-EK-WF2"/>
-                                    <constraint firstAttribute="width" constant="30" id="z66-Qf-jwB"/>
+                                    <constraint firstAttribute="width" secondItem="UVP-Xa-3zJ" secondAttribute="height" multiplier="1:1" id="wLL-uW-Fhi"/>
+                                    <constraint firstAttribute="width" constant="40" id="z66-Qf-jwB"/>
                                 </constraints>
                                 <state key="normal" image="settings"/>
                                 <connections>
                                     <action selector="settingButtonTapped:" destination="nuV-ql-xtG" eventType="touchUpInside" id="qs3-gr-fm6"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="i5o-zy-Dcl">
+                                <rect key="frame" x="16" y="611" width="295" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-2c-VXU">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-Rp-eIG" customClass="GTProgressBar" customModule="GTProgressBar">
+                                        <rect key="frame" x="0.0" y="32" width="295" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="dhc-sB-0cL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="UVP-Xa-3zJ" secondAttribute="bottom" constant="8" id="4uF-WO-pae"/>
+                            <constraint firstItem="i5o-zy-Dcl" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="bottom" constant="8" id="7lp-Kk-WoF"/>
+                            <constraint firstItem="UVP-Xa-3zJ" firstAttribute="leading" secondItem="i5o-zy-Dcl" secondAttribute="trailing" constant="8" id="FmG-hM-Wse"/>
                             <constraint firstItem="GeW-Hj-JTV" firstAttribute="leading" secondItem="AM2-wo-1dc" secondAttribute="leadingMargin" id="Gim-cv-xuu"/>
+                            <constraint firstItem="i5o-zy-Dcl" firstAttribute="leading" secondItem="AM2-wo-1dc" secondAttribute="leadingMargin" id="IHR-pU-zJ7"/>
                             <constraint firstItem="GeW-Hj-JTV" firstAttribute="trailing" secondItem="AM2-wo-1dc" secondAttribute="trailingMargin" id="NSw-tI-WXI"/>
-                            <constraint firstItem="UVP-Xa-3zJ" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="bottom" constant="8" id="PgW-tV-bmi"/>
+                            <constraint firstItem="UVP-Xa-3zJ" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="bottom" constant="16" id="PgW-tV-bmi"/>
+                            <constraint firstItem="RT9-qe-ffw" firstAttribute="top" secondItem="i5o-zy-Dcl" secondAttribute="bottom" constant="8" id="S2l-Dg-1TK"/>
                             <constraint firstItem="GeW-Hj-JTV" firstAttribute="top" secondItem="9Uf-jE-llp" secondAttribute="bottom" id="SMf-WO-OPI"/>
                             <constraint firstAttribute="trailing" secondItem="UVP-Xa-3zJ" secondAttribute="trailing" constant="16" id="YAI-MZ-TMr"/>
                         </constraints>
@@ -64,7 +86,7 @@
         <!--Navigation Controller-->
         <scene sceneID="duv-Qt-SZe">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABZ-FI-FYf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ABZ-FI-FYf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fOu-jZ-12G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

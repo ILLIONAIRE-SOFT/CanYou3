@@ -21,12 +21,12 @@ class SettingCigarettePriceTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        textField.placeholder = String(currentUser.cigarettePrice)
+        textField.placeholder = String(dc.currentUser.cigarettePrice)
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem){
-//        if let value = Int(textField.text ?? "0") {
-//            currentUser.cigarettePrice = value
-//        }
+        if let value = Int16(textField.text ?? "0") {
+            dc.currentUser.cigarettePrice = value
+        }
     }
 }

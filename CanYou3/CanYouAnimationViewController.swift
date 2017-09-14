@@ -14,7 +14,7 @@ class CanYouAnimationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.4, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
             self.label.fadeTransition(for: 1.2)
             self.label.text = "You Can !"
         })

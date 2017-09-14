@@ -10,13 +10,10 @@ import UIKit
 import CoreData
 
 class DataController: NSObject {
-    // MARK: Singleton
-    static let shared = DataController(){
-        // Additional Code
-    }
+    var currentUser: User!
     
     // MARK: - Core Data stack
-    lazy var persistentContainer: NSPersistentContainer = {
+    private var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -42,10 +39,11 @@ class DataController: NSObject {
         })
         return container
     }()
+    
     var managedObjectContext: NSManagedObjectContext
     
     // MARK: - Initializer
-    private init(completionClosure: @escaping () -> ()) {
+    init(completionClosure: @escaping () -> ()) {
         //This resource is the same name as your xcdatamodeld contained in your project
         guard let modelURL = Bundle.main.url(forResource: CoreDataName.mainModel, withExtension:"momd") else {
             fatalError("Error loading model from bundle")
@@ -76,17 +74,42 @@ class DataController: NSObject {
         }
     }
     
+    // Init CurrentUser
+    func setCurrentUser() {
+        let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
+        queue.async {
+            let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+            
+            var fetchedElements: [User]?
+            self.managedObjectContext.performAndWait {
+                fetchedElements = try? fetchRequest.execute()
+            }
+            
+            if let existingElement = fetchedElements?.first {
+                self.currentUser = existingElement
+            } else {
+                var element: User!
+                self.managedObjectContext.performAndWait {
+                    element = User(context: self.managedObjectContext)
+                    element.startDate = NSDate()
+                    element.birthDate = NSDate()
+                }
+                self.saveContext()
+                
+                self.currentUser = element
+            }
+        }
+    }
+    
+    // Init 
+    
     // MARK: - Core Data Saving support
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
+    func saveContext() {
+        if self.managedObjectContext.hasChanges {
             do {
-                try context.save()
+                try self.managedObjectContext.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                fatalError("Failure to save context: \(error)")
             }
         }
     }

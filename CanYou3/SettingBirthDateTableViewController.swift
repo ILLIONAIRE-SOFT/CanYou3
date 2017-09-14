@@ -22,11 +22,14 @@ class SettingBirthDateTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        datePicker.date = currentUser.birth
+        if let birthDate = dc.currentUser.birthDate {
+            datePicker.date = birthDate as Date
+        }
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-//        currentUser.birth = datePicker.date
+        dc.currentUser.birthDate = datePicker.date as NSDate
+        dc.saveContext()
         self.navigationController?.popViewController(animated: true)
     }
 }

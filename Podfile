@@ -8,6 +8,7 @@ target 'CanYou3' do
   # Pods for CanYou3
   pod 'Hero', '1.0.0-alpha.4'
   pod 'Then'
+  pod 'GTProgressBar'
 
   target 'CanYou3Tests' do
     inherit! :search_paths

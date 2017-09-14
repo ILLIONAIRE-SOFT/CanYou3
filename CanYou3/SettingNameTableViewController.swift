@@ -24,13 +24,14 @@ class SettingNameTableViewController: BaseTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        nameTextField.placeholder = currentUser.name
+        nameTextField.placeholder = dc.currentUser.name
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
         if let name = nameTextField.text {
             // Save
-            
+            dc.currentUser.name = name
+            dc.saveContext()
             self.navigationController?.popViewController(animated: true)
         } else {
             print("somthing is wrong")
