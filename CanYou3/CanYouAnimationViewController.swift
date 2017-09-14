@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import LTMorphingLabel
 
 class CanYouAnimationViewController: BaseViewController {
-    @IBOutlet var label: UILabel!
+    @IBOutlet var label: LTMorphingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
             //self.label.fadeTransition(for: 1.2)
+            self.label.morphingDuration = 1.2
+            self.label.morphingEffect = .evaporate
             self.label.text = "You Can !"
         })
         

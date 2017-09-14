@@ -10,6 +10,9 @@ target 'CanYou3' do
   pod 'Then'
   pod 'GTProgressBar'
   pod 'LTMorphingLabel'
+#  pod 'DynamicButton', '~> 4.0'
+  pod 'PMSuperButton', '~> 1.0'
+  pod 'ParkedTextField'
 
   target 'CanYou3Tests' do
     inherit! :search_paths
