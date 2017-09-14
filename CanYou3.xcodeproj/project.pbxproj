@@ -10,6 +10,7 @@
 		0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DA1F694F3900A03E11 /* EntityName.swift */; };
 		0701B3DD1F69517700A03E11 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */; };
 		0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */; };
+		0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */; };
 		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
 		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
 		07592B271F5E84E900986944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07592B261F5E84E900986944 /* Assets.xcassets */; };
@@ -83,6 +84,8 @@
 		0701B3DA1F694F3900A03E11 /* EntityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityName.swift; sourceTree = "<group>"; };
 		0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
 		0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMethod.swift; sourceTree = "<group>"; };
+		0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 5.xcdatamodel"; sourceTree = "<group>"; };
+		0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerName.swift; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B1F1F5E84E900986944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CanYou3/AppDelegate.swift; sourceTree = "<group>"; };
 		07592B241F5E84E900986944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,12 +204,12 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
-				076A5A131F66C20800BCB8F9 /* Model */,
+				076A5A131F66C20800BCB8F9 /* Models */,
 				076A5A0C1F66BA6E00BCB8F9 /* Base */,
 				076A5A041F66B56400BCB8F9 /* Dashboard */,
 				077696851F687FC6000BC687 /* Settings */,
 				076A59FF1F66ACA100BCB8F9 /* Main */,
-				0776967E1F6879A6000BC687 /* Controller */,
+				0776967E1F6879A6000BC687 /* Controllers */,
 				077696821F687EE9000BC687 /* Supoorting Files */,
 			);
 			path = CanYou3;
@@ -265,6 +268,7 @@
 				0701B3DA1F694F3900A03E11 /* EntityName.swift */,
 				076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */,
 				0776967F1F687C82000BC687 /* CoreDataName.swift */,
+				0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */,
 			);
 			name = Configurations;
 			path = CanYou3;
@@ -280,7 +284,7 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
-		076A5A131F66C20800BCB8F9 /* Model */ = {
+		076A5A131F66C20800BCB8F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */,
@@ -293,16 +297,16 @@
 				077696731F687030000BC687 /* User+CoreDataProperties.swift */,
 				076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		0776967E1F6879A6000BC687 /* Controller */ = {
+		0776967E1F6879A6000BC687 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				077696AA1F688750000BC687 /* AnimationController.swift */,
 				0776967C1F68798E000BC687 /* DataController.swift */,
 			);
-			name = Controller;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		077696811F687E7E000BC687 /* Extensions */ = {
@@ -321,10 +325,10 @@
 				07592B4E1F5E85B900986944 /* Resources */,
 				076A5A071F66B67E00BCB8F9 /* Configurations */,
 				077696811F687E7E000BC687 /* Extensions */,
+				07F4E6591F6A38ED0040CC1B /* Utilities */,
 				07592B1F1F5E84E900986944 /* AppDelegate.swift */,
 				07592B281F5E84E900986944 /* LaunchScreen.storyboard */,
 				07592B2B1F5E84E900986944 /* Info.plist */,
-				07F4E6591F6A38ED0040CC1B /* Utilities */,
 			);
 			name = "Supoorting Files";
 			path = ..;
@@ -674,12 +678,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTProgressBar/GTProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,6 +732,7 @@
 				0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */,
 				076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */,
 				0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */,
+				0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */,
 				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
 				0776967D1F68798E000BC687 /* DataController.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
@@ -1029,12 +1036,13 @@
 		076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */,
 				07F4E6561F6A37130040CC1B /* CanYou 4.xcdatamodel */,
 				07F4E6551F6A34A60040CC1B /* CanYou 3.xcdatamodel */,
 				07F4E6521F6A2DB60040CC1B /* CanYou 2.xcdatamodel */,
 				076A5A111F66C1FB00BCB8F9 /* CanYou3.xcdatamodel */,
 			);
-			currentVersion = 07F4E6561F6A37130040CC1B /* CanYou 4.xcdatamodel */;
+			currentVersion = 0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */;
 			path = CanYou3.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

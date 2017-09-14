@@ -15,20 +15,19 @@ class CanYouAnimationViewController: BaseViewController {
         super.viewDidLoad()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
-            self.label.fadeTransition(for: 1.2)
+            //self.label.fadeTransition(for: 1.2)
             self.label.text = "You Can !"
         })
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.7, execute: {
             // Instantiate View Controller
             let vc: UIViewController!
-//            if dataController.currentUser.isNew {
-//                viewController = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
-//            } else {
-//                viewController = storyboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
-//            }
-            
-            vc = viewController(forStoryboardName: StoryboardName.dashboard)
+            if self.dc.currentUser.isFirst {
+                let storyboard = UIStoryboard(name: StoryboardName.main, bundle: Bundle.main)
+                vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController")
+            } else {
+                vc = viewController(forStoryboardName: StoryboardName.dashboard)
+            }
             
             vc.modalTransitionStyle = .crossDissolve
             
