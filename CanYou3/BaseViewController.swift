@@ -13,8 +13,7 @@ import Hero
 import Then
 
 class BaseViewController: UIViewController {
-    // let realm = try! Realm()
-    // var currentUser = DataController.shared.currentUser
+    // dataController
     lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
     
     // MARK : Memory Management
@@ -89,6 +88,3 @@ extension BaseViewController: UNUserNotificationCenterDelegate{
         completionHandler( [.alert,.sound,.badge])
     }
 }
-
-
-

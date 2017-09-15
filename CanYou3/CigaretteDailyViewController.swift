@@ -16,23 +16,32 @@ class CigaretteDailyViewController: BaseBackgroundViewController {
         super.viewDidLoad()
     }
     
+//    @IBAction func startTapped(_ sender: UIButton){
+//        let storyboard = UIStoryboard(name: StoryboardName.main, bundle: Bundle.main)
+//        let vc = storyboard.instantiateViewController(withIdentifier: ViewControllerName.welcome)
+//        
+//        vc.heroModalAnimationType = .zoom
+//        self.hero_replaceViewController(with: vc)
+//    }
+    
     @IBAction func startTapped(_ sender: UIButton) {
-        let text: String = cigaretteDaily.text ?? ""
-        if text.isEmpty {
-            presentMessageBox("Input numbers !")
+        guard let text = cigaretteDaily.text, let value = Int16(text) else {
+            presentMessageBox("Input numbers only !")
             return
         }
-        if Int(text)! <= 0 {
+        if value <= 0 {
             presentMessageBox("Must be bigger than 0 !")
             return
         }
-        dc.currentUser.cigaretteDaily = Int16(text)!
+        dc.currentUser.cigaretteDaily = value
         dc.currentUser.startDate = NSDate()
+        //dc.currentUser.isFirst = false
+        dc.currentUser.isFirst = true
         dc.saveContext()
         
         let vc = viewController(forStoryboardName: StoryboardName.dashboard)
         
-        present(vc, animated: true, completion: nil)
+        self.hero_replaceViewController(with: vc)
     }
     
     override func didReceiveMemoryWarning() {

@@ -10,4 +10,5 @@ import Foundation
 
 struct ViewControllerName {
     static let welcome = "WelcomeViewController"
+    static let cigaretteDaily = "CigaretteDailyViewController"
 }

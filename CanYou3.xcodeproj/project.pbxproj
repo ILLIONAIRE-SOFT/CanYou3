@@ -10,6 +10,8 @@
 		0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DA1F694F3900A03E11 /* EntityName.swift */; };
 		0701B3DD1F69517700A03E11 /* CigaretteDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */; };
 		0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */; };
+		07069F211F6B3532004F4A04 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F201F6B3532004F4A04 /* Computer.swift */; };
+		07069F231F6B400B004F4A04 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F221F6B400B004F4A04 /* WelcomeViewController.swift */; };
 		0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */; };
 		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
 		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
@@ -84,6 +86,8 @@
 		0701B3DA1F694F3900A03E11 /* EntityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityName.swift; sourceTree = "<group>"; };
 		0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CigaretteDailyViewController.swift; sourceTree = "<group>"; };
 		0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMethod.swift; sourceTree = "<group>"; };
+		07069F201F6B3532004F4A04 /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		07069F221F6B400B004F4A04 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 5.xcdatamodel"; sourceTree = "<group>"; };
 		0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerName.swift; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +251,7 @@
 			children = (
 				07592B231F5E84E900986944 /* Main.storyboard */,
 				076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */,
+				07069F221F6B400B004F4A04 /* WelcomeViewController.swift */,
 				0701B3DC1F69517700A03E11 /* CigaretteDailyViewController.swift */,
 			);
 			name = Main;
@@ -379,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				07F4E6571F6A38E60040CC1B /* Formmatter.swift */,
+				07069F201F6B3532004F4A04 /* Computer.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -680,7 +686,6 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
-				"${BUILT_PRODUCTS_DIR}/ParkedTextField/ParkedTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -689,7 +694,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParkedTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,6 +739,7 @@
 				076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */,
 				0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */,
 				076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */,
+				07069F231F6B400B004F4A04 /* WelcomeViewController.swift in Sources */,
 				0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */,
 				0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */,
 				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
@@ -757,6 +762,7 @@
 				077696801F687C82000BC687 /* CoreDataName.swift in Sources */,
 				0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */,
 				0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */,
+				07069F211F6B3532004F4A04 /* Computer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

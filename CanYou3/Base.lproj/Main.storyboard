@@ -44,10 +44,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Base Background View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="lB0-ry-DS1">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="DKh-Uz-PW7" customClass="BaseBackgroundViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="DKh-Uz-PW7" customClass="WelcomeViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oF3-x4-nvL"/>
                         <viewControllerLayoutGuide type="bottom" id="XSF-z5-ZHo"/>
@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="height" constant="50" id="3b0-zO-yzl"/>
                                     <constraint firstAttribute="width" constant="120" id="ZhM-AC-4ZI"/>
                                 </constraints>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -111,9 +111,10 @@
                                         <color key="value" red="1" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="cgL-rK-RdE" kind="show" id="SzZ-Qx-wdA"/>
+                                    <action selector="nextTapped:" destination="DKh-Uz-PW7" eventType="touchUpInside" id="BSJ-wn-lSo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,6 +130,7 @@
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQJ-lM-q8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,7 +140,7 @@
         <!--Cigarette Daily View Controller-->
         <scene sceneID="JDp-K5-Qhc">
             <objects>
-                <viewController id="cgL-rK-RdE" customClass="CigaretteDailyViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CigaretteDailyViewController" id="cgL-rK-RdE" customClass="CigaretteDailyViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEw-6k-HFs"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2g-tM-nCn"/>
@@ -147,13 +149,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-mW-TJx">
-                                <rect key="frame" x="16" y="140" width="343" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="하루 평균 흡연량이 어떻게 되시나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-mW-TJx">
+                                <rect key="frame" x="16" y="141" width="343" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="XDN-7G-bYQ"/>
                                 </constraints>
-                                <string key="text">하루 평균
-몇 개비 피우시나요?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,19 +161,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="label"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brQ-RH-QoG" customClass="ParkedTextField" customModule="ParkedTextField">
-                                <rect key="frame" x="32" y="321" width="311" height="24"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="parkedText" value=" 개비"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="20"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="parkedTextColor">
-                                        <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-L5-GaW" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="127" y="597" width="120" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -220,28 +207,39 @@
                                         <color key="value" red="1" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTapped:" destination="cgL-rK-RdE" eventType="touchUpInside" id="5D5-6t-CqT"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-kC-kOp">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="i4b-7A-QB0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="sBx-mW-TJx" secondAttribute="trailing" id="70d-MV-LgM"/>
                             <constraint firstItem="Y2g-tM-nCn" firstAttribute="top" secondItem="nAK-L5-GaW" secondAttribute="bottom" constant="20" id="CVR-ip-fOK"/>
-                            <constraint firstItem="brQ-RH-QoG" firstAttribute="centerY" secondItem="Hl2-Gg-H1r" secondAttribute="centerY" id="Gl0-aC-iKN"/>
                             <constraint firstItem="sBx-mW-TJx" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="QS7-RP-R4D"/>
                             <constraint firstItem="nAK-L5-GaW" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="Ykk-Ot-XQT"/>
                             <constraint firstItem="sBx-mW-TJx" firstAttribute="leading" secondItem="Hl2-Gg-H1r" secondAttribute="leadingMargin" id="cCK-yw-Xjh"/>
-                            <constraint firstItem="brQ-RH-QoG" firstAttribute="leading" secondItem="Hl2-Gg-H1r" secondAttribute="leadingMargin" constant="16" id="h5X-Zv-pUy"/>
-                            <constraint firstItem="brQ-RH-QoG" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="nDj-Gw-sc2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="brQ-RH-QoG" secondAttribute="trailing" constant="16" id="r6x-oo-4YL"/>
-                            <constraint firstItem="sBx-mW-TJx" firstAttribute="top" secondItem="iEw-6k-HFs" secondAttribute="bottom" constant="120" id="rNN-1d-mZi"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="centerY" secondItem="Hl2-Gg-H1r" secondAttribute="centerY" id="sCH-PN-YHD"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="xCp-N4-ccq"/>
                         </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="cigaretteDaily" destination="brQ-RH-QoG" id="lHd-Hk-518"/>
+                        <outlet property="cigaretteDaily" destination="hiN-kC-kOp" id="B60-gR-Jpe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaL-z4-e4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

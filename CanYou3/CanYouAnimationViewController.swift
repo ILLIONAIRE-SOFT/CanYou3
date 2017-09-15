@@ -27,7 +27,7 @@ class CanYouAnimationViewController: BaseViewController {
             let vc: UIViewController!
             if self.dc.currentUser.isFirst {
                 let storyboard = UIStoryboard(name: StoryboardName.main, bundle: Bundle.main)
-                vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController")
+                vc = storyboard.instantiateViewController(withIdentifier: ViewControllerName.welcome)
             } else {
                 vc = viewController(forStoryboardName: StoryboardName.dashboard)
             }
@@ -38,6 +38,7 @@ class CanYouAnimationViewController: BaseViewController {
         })
         
     }
+    
     
     // MARK : Memory Management
     override func didReceiveMemoryWarning() {

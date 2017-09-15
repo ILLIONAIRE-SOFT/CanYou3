@@ -9,6 +9,7 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController {
+    // dataController
     lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class BaseTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        super.tableView(tableView, didSelectRowAt: indexPath)
+        //super.tableView(tableView, didSelectRowAt: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

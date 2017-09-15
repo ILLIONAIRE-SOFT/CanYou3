@@ -12,7 +12,7 @@ target 'CanYou3' do
   pod 'LTMorphingLabel'
 #  pod 'DynamicButton', '~> 4.0'
   pod 'PMSuperButton', '~> 1.0'
-  pod 'ParkedTextField'
+  #pod 'ParkedTextField'
 
   target 'CanYou3Tests' do
     inherit! :search_paths
