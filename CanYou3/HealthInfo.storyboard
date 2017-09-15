@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Health Infomation-->
+        <scene sceneID="fcx-Mj-OSQ">
+            <objects>
+                <tableViewController storyboardIdentifier="HealthInfoTableViewController" id="pXh-SB-bJt" customClass="HealthInfoTableViewController" customModule="CanYou" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IQB-NA-pNG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="HealthInfoTableViewCell" id="ihx-FO-nMc" customClass="HealthInfoTableViewCell" customModule="CanYou" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihx-FO-nMc" id="XHA-wk-xKq">
+                                    <rect key="frame" x="0.0" y="0.0" width="336" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PNd-3C-h4n">
+                                            <rect key="frame" x="8" y="31.5" width="320" height="4"/>
+                                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="4" id="Mat-3E-3X1"/>
+                                            </constraints>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8I-Pa-2w0">
+                                            <rect key="frame" x="8" y="5" width="320" height="18.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PNd-3C-h4n" firstAttribute="top" secondItem="a8I-Pa-2w0" secondAttribute="bottom" constant="8" id="5Vm-i5-3r7"/>
+                                        <constraint firstAttribute="trailing" secondItem="a8I-Pa-2w0" secondAttribute="trailing" constant="8" id="BEZ-HG-x9Q"/>
+                                        <constraint firstItem="a8I-Pa-2w0" firstAttribute="top" secondItem="XHA-wk-xKq" secondAttribute="top" constant="5" id="SFc-SU-ko4"/>
+                                        <constraint firstItem="a8I-Pa-2w0" firstAttribute="leading" secondItem="XHA-wk-xKq" secondAttribute="leading" constant="8" id="Z6Q-ZV-Itg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PNd-3C-h4n" secondAttribute="trailing" id="bSA-zq-own"/>
+                                        <constraint firstItem="PNd-3C-h4n" firstAttribute="leading" secondItem="XHA-wk-xKq" secondAttribute="leadingMargin" id="nwJ-qa-ILY"/>
+                                        <constraint firstItem="PNd-3C-h4n" firstAttribute="bottom" secondItem="XHA-wk-xKq" secondAttribute="bottomMargin" id="tmM-J8-AzD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="progressView" destination="PNd-3C-h4n" id="ArK-op-KX5"/>
+                                    <outlet property="titleLabel" destination="a8I-Pa-2w0" id="gy8-QN-FNA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pXh-SB-bJt" id="ZV5-g5-IDO"/>
+                            <outlet property="delegate" destination="pXh-SB-bJt" id="i0n-wL-tMr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Health Infomation" id="Tgu-9e-2YY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kS5-6t-Tlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="482"/>
+        </scene>
+    </scenes>
+</document>

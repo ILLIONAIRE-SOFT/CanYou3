@@ -12,4 +12,9 @@ import CoreData
 @objc(User)
 public class User: NSManagedObject {
 
+    var timeInterval: TimeInterval {
+        guard let date = self.startDate else { return 0 }
+        return Date().timeIntervalSince(date as Date)
+    }
+    
 }

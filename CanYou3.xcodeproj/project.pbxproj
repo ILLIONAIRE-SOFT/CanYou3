@@ -12,6 +12,9 @@
 		0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */; };
 		07069F211F6B3532004F4A04 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F201F6B3532004F4A04 /* Computer.swift */; };
 		07069F231F6B400B004F4A04 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F221F6B400B004F4A04 /* WelcomeViewController.swift */; };
+		07069F251F6C3EA9004F4A04 /* HealthInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07069F241F6C3EA9004F4A04 /* HealthInfo.storyboard */; };
+		07069F271F6C3EC9004F4A04 /* HealthInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F261F6C3EC9004F4A04 /* HealthInfoTableViewController.swift */; };
+		07069F291F6C402D004F4A04 /* HealthInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07069F281F6C402D004F4A04 /* HealthInfoTableViewCell.swift */; };
 		0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */; };
 		07592B201F5E84E900986944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B1F1F5E84E900986944 /* AppDelegate.swift */; };
 		07592B251F5E84E900986944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B231F5E84E900986944 /* Main.storyboard */; };
@@ -88,6 +91,9 @@
 		0701B3DE1F6954C400A03E11 /* GeneralMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralMethod.swift; sourceTree = "<group>"; };
 		07069F201F6B3532004F4A04 /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 		07069F221F6B400B004F4A04 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		07069F241F6C3EA9004F4A04 /* HealthInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthInfo.storyboard; sourceTree = "<group>"; };
+		07069F261F6C3EC9004F4A04 /* HealthInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewController.swift; sourceTree = "<group>"; };
+		07069F281F6C402D004F4A04 /* HealthInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 5.xcdatamodel"; sourceTree = "<group>"; };
 		0734B77B1F6AD7FE00A8FE4A /* ViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerName.swift; sourceTree = "<group>"; };
 		07592B1C1F5E84E900986944 /* CanYou3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYou3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,6 +352,7 @@
 				0776969A1F688426000BC687 /* Storyboards */,
 				077696861F688106000BC687 /* SettingsTableViewController.swift */,
 				077696831F687FBD000BC687 /* Settings.storyboard */,
+				07069F281F6C402D004F4A04 /* HealthInfoTableViewCell.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -361,6 +368,7 @@
 				077696961F6883E8000BC687 /* SettingCigaretteDaily.storyboard */,
 				077696981F688404000BC687 /* SettingCigarettePrice.storyboard */,
 				077696921F68839B000BC687 /* SettingStartDate.storyboard */,
+				07069F241F6C3EA9004F4A04 /* HealthInfo.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -376,6 +384,7 @@
 				077696A41F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift */,
 				077696A61F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift */,
 				077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */,
+				07069F261F6C3EC9004F4A04 /* HealthInfoTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -537,6 +546,7 @@
 				07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */,
 				07592B271F5E84E900986944 /* Assets.xcassets in Resources */,
 				077696991F688404000BC687 /* SettingCigarettePrice.storyboard in Resources */,
+				07069F251F6C3EA9004F4A04 /* HealthInfo.storyboard in Resources */,
 				0776968F1F688351000BC687 /* SettingGender.storyboard in Resources */,
 				07592B251F5E84E900986944 /* Main.storyboard in Resources */,
 				077696911F68837B000BC687 /* SettingBirthDate.storyboard in Resources */,
@@ -743,12 +753,14 @@
 				0701B3DF1F6954C400A03E11 /* GeneralMethod.swift in Sources */,
 				0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */,
 				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
+				07069F291F6C402D004F4A04 /* HealthInfoTableViewCell.swift in Sources */,
 				0776967D1F68798E000BC687 /* DataController.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
 				077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */,
 				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
 				07F4E6541F6A329B0040CC1B /* Versions.swift in Sources */,
 				076A5A121F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld in Sources */,
+				07069F271F6C3EC9004F4A04 /* HealthInfoTableViewController.swift in Sources */,
 				077696781F687030000BC687 /* Badge+CoreDataClass.swift in Sources */,
 				076A59FE1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift in Sources */,
 				077696761F687030000BC687 /* HealthInfo+CoreDataClass.swift in Sources */,
