@@ -25,7 +25,53 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-Hj-JTV">
                                 <rect key="frame" x="16" y="20" width="343" height="583"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-JQ-s6G">
+                                        <rect key="frame" x="203" y="443" width="120" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-69-nSY">
+                                                <rect key="frame" x="8" y="8" width="104" height="104"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="badgeImage"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-rb-it5">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="No Badge!">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="badgeName"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="badgeButtonTapped:" destination="nuV-ql-xtG" eventType="touchUpInside" id="x1p-Dl-hfh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PVI-rb-it5" secondAttribute="bottom" id="HSs-XC-vaD"/>
+                                            <constraint firstAttribute="trailing" secondItem="WcY-69-nSY" secondAttribute="trailing" constant="8" id="PQL-uY-AmC"/>
+                                            <constraint firstAttribute="trailing" secondItem="PVI-rb-it5" secondAttribute="trailing" id="Zja-Ad-uWO"/>
+                                            <constraint firstAttribute="bottom" secondItem="WcY-69-nSY" secondAttribute="bottom" constant="8" id="bFp-Zk-tWt"/>
+                                            <constraint firstItem="WcY-69-nSY" firstAttribute="top" secondItem="4mA-JQ-s6G" secondAttribute="top" constant="8" id="ecZ-1C-o4k"/>
+                                            <constraint firstAttribute="height" constant="120" id="jEa-c9-TcG"/>
+                                            <constraint firstItem="PVI-rb-it5" firstAttribute="top" secondItem="4mA-JQ-s6G" secondAttribute="top" id="kI8-bD-3rV"/>
+                                            <constraint firstItem="WcY-69-nSY" firstAttribute="leading" secondItem="4mA-JQ-s6G" secondAttribute="leading" constant="8" id="pqI-V9-xw8"/>
+                                            <constraint firstItem="PVI-rb-it5" firstAttribute="leading" secondItem="4mA-JQ-s6G" secondAttribute="leading" id="qBg-2h-24A"/>
+                                            <constraint firstAttribute="width" constant="120" id="qIG-pE-E4O"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="badgeBackground"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4mA-JQ-s6G" secondAttribute="bottom" constant="20" id="9r4-WG-wM7"/>
+                                    <constraint firstAttribute="trailing" secondItem="4mA-JQ-s6G" secondAttribute="trailing" constant="20" id="lxP-ru-pWN"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
@@ -78,6 +124,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qNU-hO-fuE"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lM7-3N-DnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="noBadge" width="150" height="150"/>
         <image name="settings" width="1000" height="1000"/>
     </resources>
 </document>

@@ -15,6 +15,9 @@ import Then
 class BaseViewController: UIViewController {
     // dataController
     lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
+    var currentUser: User {
+        return dc.currentUser
+    }
     
     // MARK : Memory Management
     override func didReceiveMemoryWarning() {

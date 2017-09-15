@@ -12,6 +12,9 @@ struct StoryboardName {
     static let main = "Main"
     static let launchScreen = "LaunchScreen"
     static let dashboard = "Dashboard"
+    static let badge = "Badge"
+    static let reward = "Reward"
+    
     
     // MARK : - Settings
     static let settings = "Settings"

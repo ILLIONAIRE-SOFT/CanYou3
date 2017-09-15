@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Hero
 
 class DashboardViewController: BaseBackgroundViewController {
     
     // Present SettingTableView with Custom animation
     @IBAction func settingButtonTapped(_ sender: UIButton) {
         // push view controller but animate modally
-        let vc = viewController(forStoryboardName: "Settings") as! SettingsTableViewController
+        let vc = viewController(forStoryboardName: StoryboardName.settings)
         
         presentWith(transition: AnimationController.popUpTransition, viewController: vc)
+    }
+    
+    @IBAction func badgeButtonTapped(_ sender: UIButton) {
+        let vc = viewController(forStoryboardName: StoryboardName.badge)
+        
+        vc.heroModalAnimationType = .auto
+        
+        hero_replaceViewController(with: vc)
+//        presentWith(transition: AnimationController.popUpTransition, viewController: vc)
+        
     }
     
     // MARK: - Hide NavigationBar only for this ViewController

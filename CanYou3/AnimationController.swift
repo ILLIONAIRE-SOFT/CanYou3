@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Then
 
-struct AnimationController: Then {
+struct AnimationController {
     static var popUpTransition: CATransition {
         return CATransition().then{
             $0.duration = 0.5

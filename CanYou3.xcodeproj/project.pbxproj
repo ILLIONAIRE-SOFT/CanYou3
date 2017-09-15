@@ -22,6 +22,8 @@
 		07592B2A1F5E84E900986944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07592B281F5E84E900986944 /* LaunchScreen.storyboard */; };
 		07592B351F5E84E900986944 /* CanYou3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B341F5E84E900986944 /* CanYou3Tests.swift */; };
 		07592B401F5E84E900986944 /* CanYou3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07592B3F1F5E84E900986944 /* CanYou3UITests.swift */; };
+		07693A631F6C00F700249B64 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07693A621F6C00F700249B64 /* BadgeViewController.swift */; };
+		07693A661F6C017F00249B64 /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07693A651F6C017F00249B64 /* BadgeTableViewCell.swift */; };
 		076A59FC1F66ABBC00BCB8F9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */; };
 		076A59FE1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */; };
 		076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */; };
@@ -62,6 +64,12 @@
 		077696AD1F688A95000BC687 /* SettingVersion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696AC1F688A95000BC687 /* SettingVersion.storyboard */; };
 		07F4E6541F6A329B0040CC1B /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4E6531F6A329B0040CC1B /* Versions.swift */; };
 		07F4E6581F6A38E60040CC1B /* Formmatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4E6571F6A38E60040CC1B /* Formmatter.swift */; };
+		07F6642C1F6BD446004DE43B /* HealthInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F6642B1F6BD446004DE43B /* HealthInfoStore.swift */; };
+		07F6642E1F6BD47B004DE43B /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F6642D1F6BD47B004DE43B /* BaseStore.swift */; };
+		07F664311F6BD666004DE43B /* BadgeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F664301F6BD666004DE43B /* BadgeStore.swift */; };
+		07F664341F6BE621004DE43B /* RewardStrore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F664331F6BE621004DE43B /* RewardStrore.swift */; };
+		07F664381F6BE9A5004DE43B /* InitialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F664371F6BE9A5004DE43B /* InitialData.swift */; };
+		07F6643A1F6BFFAE004DE43B /* Badge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F664391F6BFFAE004DE43B /* Badge.storyboard */; };
 		5B82F9E7A22FF4336FF51B62 /* Pods_CanYou3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4856FA79EFDFDADAF56E67 /* Pods_CanYou3Tests.framework */; };
 		63337752F685A69C9FCB955E /* Pods_CanYou3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC70830416A71511370FDF73 /* Pods_CanYou3.framework */; };
 		A8B4CA1C9BEFEE355AD77B94 /* Pods_CanYou3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F66DE76832DE524001E5A8B /* Pods_CanYou3UITests.framework */; };
@@ -108,6 +116,8 @@
 		07592B3B1F5E84E900986944 /* CanYou3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanYou3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07592B3F1F5E84E900986944 /* CanYou3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanYou3UITests.swift; sourceTree = "<group>"; };
 		07592B411F5E84E900986944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07693A621F6C00F700249B64 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
+		07693A651F6C017F00249B64 /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 		076A59FB1F66ABBC00BCB8F9 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		076A59FD1F66AC6A00BCB8F9 /* CanYouAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanYouAnimationViewController.swift; sourceTree = "<group>"; };
 		076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -152,6 +162,13 @@
 		07F4E6551F6A34A60040CC1B /* CanYou 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 3.xcdatamodel"; sourceTree = "<group>"; };
 		07F4E6561F6A37130040CC1B /* CanYou 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 4.xcdatamodel"; sourceTree = "<group>"; };
 		07F4E6571F6A38E60040CC1B /* Formmatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formmatter.swift; sourceTree = "<group>"; };
+		07F6642B1F6BD446004DE43B /* HealthInfoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthInfoStore.swift; sourceTree = "<group>"; };
+		07F6642D1F6BD47B004DE43B /* BaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
+		07F664301F6BD666004DE43B /* BadgeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeStore.swift; sourceTree = "<group>"; };
+		07F664321F6BD7BE004DE43B /* CanYou 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 6.xcdatamodel"; sourceTree = "<group>"; };
+		07F664331F6BE621004DE43B /* RewardStrore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardStrore.swift; sourceTree = "<group>"; };
+		07F664371F6BE9A5004DE43B /* InitialData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialData.swift; sourceTree = "<group>"; };
+		07F664391F6BFFAE004DE43B /* Badge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Badge.storyboard; sourceTree = "<group>"; };
 		07FBC6D75670EBE269409A2D /* Pods-CanYou3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29BDFCA2FA63E0BBCAEAFD54 /* Pods-CanYou3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3Tests/Pods-CanYou3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2D4856FA79EFDFDADAF56E67 /* Pods_CanYou3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanYou3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +231,7 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
+				07693A641F6C00FE00249B64 /* Badge */,
 				076A5A131F66C20800BCB8F9 /* Models */,
 				076A5A0C1F66BA6E00BCB8F9 /* Base */,
 				076A5A041F66B56400BCB8F9 /* Dashboard */,
@@ -246,10 +264,21 @@
 		07592B4E1F5E85B900986944 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07F664371F6BE9A5004DE43B /* InitialData.swift */,
 				07592B261F5E84E900986944 /* Assets.xcassets */,
 			);
 			name = Resources;
 			path = CanYou3;
+			sourceTree = "<group>";
+		};
+		07693A641F6C00FE00249B64 /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				07F664391F6BFFAE004DE43B /* Badge.storyboard */,
+				07693A621F6C00F700249B64 /* BadgeViewController.swift */,
+				07693A651F6C017F00249B64 /* BadgeTableViewCell.swift */,
+			);
+			name = Badge;
 			sourceTree = "<group>";
 		};
 		076A59FF1F66ACA100BCB8F9 /* Main */ = {
@@ -298,6 +327,7 @@
 		076A5A131F66C20800BCB8F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				07F6642F1F6BD590004DE43B /* Store */,
 				0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */,
 				0776966D1F687030000BC687 /* Reward+CoreDataProperties.swift */,
 				0776966E1F687030000BC687 /* HealthInfo+CoreDataClass.swift */,
@@ -396,6 +426,17 @@
 				07069F201F6B3532004F4A04 /* Computer.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		07F6642F1F6BD590004DE43B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				07F6642D1F6BD47B004DE43B /* BaseStore.swift */,
+				07F6642B1F6BD446004DE43B /* HealthInfoStore.swift */,
+				07F664301F6BD666004DE43B /* BadgeStore.swift */,
+				07F664331F6BE621004DE43B /* RewardStrore.swift */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 		14341A162D0E2C956DB170B4 /* Pods */ = {
@@ -553,6 +594,7 @@
 				076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */,
 				077696841F687FBD000BC687 /* Settings.storyboard in Resources */,
 				077696931F68839B000BC687 /* SettingStartDate.storyboard in Resources */,
+				07F6643A1F6BFFAE004DE43B /* Badge.storyboard in Resources */,
 				077696971F6883E8000BC687 /* SettingCigaretteDaily.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,14 +779,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				076A59FC1F66ABBC00BCB8F9 /* UIViewExtension.swift in Sources */,
+				07693A661F6C017F00249B64 /* BadgeTableViewCell.swift in Sources */,
 				076A5A0B1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift in Sources */,
 				077696891F688130000BC687 /* BaseTableViewController.swift in Sources */,
 				0776967B1F687030000BC687 /* User+CoreDataProperties.swift in Sources */,
 				077696751F687030000BC687 /* Reward+CoreDataProperties.swift in Sources */,
 				077696A11F688578000BC687 /* SettingStartDateTableViewController.swift in Sources */,
 				077696741F687030000BC687 /* Reward+CoreDataClass.swift in Sources */,
+				07F6642C1F6BD446004DE43B /* HealthInfoStore.swift in Sources */,
 				077696A51F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift in Sources */,
 				077696AB1F688750000BC687 /* AnimationController.swift in Sources */,
+				07F664381F6BE9A5004DE43B /* InitialData.swift in Sources */,
 				077696A71F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift in Sources */,
 				076A5A031F66B55900BCB8F9 /* DashboardViewController.swift in Sources */,
 				0776969D1F6884FF000BC687 /* SettingGenderTableViewController.swift in Sources */,
@@ -754,7 +799,9 @@
 				0734B77C1F6AD7FE00A8FE4A /* ViewControllerName.swift in Sources */,
 				0776969F1F688538000BC687 /* SettingBirthDateTableViewController.swift in Sources */,
 				07069F291F6C402D004F4A04 /* HealthInfoTableViewCell.swift in Sources */,
+				07F6642E1F6BD47B004DE43B /* BaseStore.swift in Sources */,
 				0776967D1F68798E000BC687 /* DataController.swift in Sources */,
+				07F664341F6BE621004DE43B /* RewardStrore.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
 				077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */,
 				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
@@ -767,10 +814,12 @@
 				077696771F687030000BC687 /* HealthInfo+CoreDataProperties.swift in Sources */,
 				077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */,
 				077696791F687030000BC687 /* Badge+CoreDataProperties.swift in Sources */,
+				07693A631F6C00F700249B64 /* BadgeViewController.swift in Sources */,
 				077696871F688106000BC687 /* SettingsTableViewController.swift in Sources */,
 				0701B3DD1F69517700A03E11 /* CigaretteDailyViewController.swift in Sources */,
 				0776967A1F687030000BC687 /* User+CoreDataClass.swift in Sources */,
 				07F4E6581F6A38E60040CC1B /* Formmatter.swift in Sources */,
+				07F664311F6BD666004DE43B /* BadgeStore.swift in Sources */,
 				077696801F687C82000BC687 /* CoreDataName.swift in Sources */,
 				0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */,
 				0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */,
@@ -1058,13 +1107,14 @@
 		076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				07F664321F6BD7BE004DE43B /* CanYou 6.xcdatamodel */,
 				0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */,
 				07F4E6561F6A37130040CC1B /* CanYou 4.xcdatamodel */,
 				07F4E6551F6A34A60040CC1B /* CanYou 3.xcdatamodel */,
 				07F4E6521F6A2DB60040CC1B /* CanYou 2.xcdatamodel */,
 				076A5A111F66C1FB00BCB8F9 /* CanYou3.xcdatamodel */,
 			);
-			currentVersion = 0734B77A1F6AD6A800A8FE4A /* CanYou 5.xcdatamodel */;
+			currentVersion = 07F664321F6BD7BE004DE43B /* CanYou 6.xcdatamodel */;
 			path = CanYou3.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

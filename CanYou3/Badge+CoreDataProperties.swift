@@ -2,7 +2,7 @@
 //  Badge+CoreDataProperties.swift
 //  CanYou3
 //
-//  Created by Mac Pro on 2017. 9. 15..
+//  Created by Macbook Pro on 2017. 9. 15..
 //  Copyright © 2017년 Eric.Park. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ extension Badge {
         return NSFetchRequest<Badge>(entityName: "Badge")
     }
 
-    @NSManaged public var conditionType: String?
+    @NSManaged public var conditionTypeStr: String?
     @NSManaged public var conditionValue: Double
     @NSManaged public var content: String?
     @NSManaged public var imageName: String?

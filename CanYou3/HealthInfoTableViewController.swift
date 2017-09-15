@@ -10,10 +10,14 @@ import UIKit
 
 class HealthInfoTableViewController: BaseTableViewController {
     // MARK : - Properties
-    let items: [HealthInfo] = [HealthInfo]()
+    var items: [HealthInfo] = [HealthInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let fetchedItems = self.dc.fetchHealthInfos() {
+            items = fetchedItems
+        }
     }
     
     override func didReceiveMemoryWarning() {

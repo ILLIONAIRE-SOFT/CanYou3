@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  CanYou3
 //
-//  Created by Mac Pro on 2017. 9. 15..
+//  Created by Macbook Pro on 2017. 9. 15..
 //  Copyright © 2017년 Eric.Park. All rights reserved.
 //
 
@@ -22,10 +22,10 @@ extension User {
     @NSManaged public var cigaretteDaily: Int16
     @NSManaged public var cigarettePrice: Int16
     @NSManaged public var gender: String?
+    @NSManaged public var isFirst: Bool
     @NSManaged public var name: String?
     @NSManaged public var randomAlarm: Bool
     @NSManaged public var startDate: NSDate?
-    @NSManaged public var isFirst: Bool
     @NSManaged public var badges: NSSet?
     @NSManaged public var rewards: NSSet?
 
