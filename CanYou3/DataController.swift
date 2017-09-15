@@ -11,8 +11,25 @@ import CoreData
 
 class DataController: NSObject {
     var currentUser: User!
-    
     var managedObjectContext: NSManagedObjectContext
+    
+    // MARK: Stores
+    lazy var badgeStore = BadgeStore()
+    lazy var rewardStore = RewardStore()
+    lazy var healthInfoStore = HealthInfoStore()
+    
+    lazy var computer = Computer()
+    
+    var lastHealthInfo: HealthInfo? {
+        if let items = self.fetchHealthInfos() {
+            for e in items {
+                if e.time > currentUser.timeInterval {
+                    return e
+                }
+            }
+        }
+        return nil
+    }
     
     // MARK: - Initializer
     //    init(completionClosure: @escaping () -> ()) {
@@ -164,11 +181,32 @@ class DataController: NSObject {
         return fetchedElements
     }
     
-    
     func fetchHealthInfos() -> [HealthInfo]? {
         let fetchRequest: NSFetchRequest<HealthInfo> = HealthInfo.fetchRequest()
         
         var fetchedElements: [HealthInfo]?
+        self.managedObjectContext.performAndWait {
+            fetchedElements = try? fetchRequest.execute()
+        }
+        
+        return fetchedElements
+    }
+    
+    func fetchBadges() -> [Badge]? {
+        let fetchRequest: NSFetchRequest<Badge> = Badge.fetchRequest()
+        
+        var fetchedElements: [Badge]?
+        self.managedObjectContext.performAndWait {
+            fetchedElements = try? fetchRequest.execute()
+        }
+        
+        return fetchedElements
+    }
+    
+    func fetchRewards() -> [Reward]? {
+        let fetchRequest: NSFetchRequest<Reward> = Reward.fetchRequest()
+        
+        var fetchedElements: [Reward]?
         self.managedObjectContext.performAndWait {
             fetchedElements = try? fetchRequest.execute()
         }

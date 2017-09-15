@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAb-1h-u6h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="hero_dismissViewController" destination="uAb-1h-u6h" eventType="touchUpInside" id="Mdp-NX-Jh9"/>
+                                            <action selector="hero_dismissViewController" destination="uAb-1h-u6h" eventType="touchUpInside" id="q1P-qP-glB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -103,7 +103,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vPa-VC-kc6" id="vMH-47-pGj">
-                                            <rect key="frame" x="0.0" y="0.0" width="310" height="64.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-61-gRX">
@@ -141,7 +141,7 @@
                                         <connections>
                                             <outlet property="badgeImageView" destination="C0L-61-gRX" id="kS4-V1-9XC"/>
                                             <outlet property="contentLabel" destination="D4X-JD-H8e" id="hP8-6o-vRZ"/>
-                                            <outlet property="titleLabel" destination="562-X1-ZyF" id="mDn-Oi-fkR"/>
+                                            <outlet property="titleLabel" destination="562-X1-ZyF" id="Zlc-XV-IUa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -175,10 +175,10 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="recentContentLabel" destination="022-PP-eYH" id="Edy-N8-yde"/>
-                        <outlet property="recentImageView" destination="HUk-wJ-TmO" id="JcD-Cs-ek1"/>
-                        <outlet property="recentTitleLabel" destination="L3F-cq-gjz" id="sgj-rv-m0r"/>
-                        <outlet property="tableView" destination="qCH-Fh-LfB" id="2BF-MD-Tdi"/>
+                        <outlet property="recentContentLabel" destination="022-PP-eYH" id="zzZ-ih-mCC"/>
+                        <outlet property="recentImageView" destination="HUk-wJ-TmO" id="NB0-fv-pLo"/>
+                        <outlet property="recentTitleLabel" destination="L3F-cq-gjz" id="cb6-F0-1P0"/>
+                        <outlet property="tableView" destination="qCH-Fh-LfB" id="6V6-7h-pF5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFb-ak-Lbg" userLabel="First Responder" sceneMemberID="firstResponder"/>

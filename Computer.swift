@@ -10,6 +10,23 @@ import UIKit
 
 class Computer {
     // dataController
-    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
+    let dc: DataController = (UIApplication.shared.delegate as! AppDelegate).dataController
     
+    // Properties about time
+    var timeElapsed: TimeInterval {
+        let startDate = dc.currentUser.startDate!
+        return NSDate().timeIntervalSince1970 - startDate.timeIntervalSince1970
+    }
+    var day: UInt32 {
+        return UInt32((timeElapsed / 86400.0))
+    }
+    var hours: UInt16 {
+        return UInt16((timeElapsed / 3600.0).truncatingRemainder(dividingBy: 24))
+    }
+    var minutes: UInt8 {
+        return UInt8((timeElapsed / 60.0).truncatingRemainder(dividingBy: 60))
+    }
+    var seconds: UInt8 {
+        return UInt8(timeElapsed.truncatingRemainder(dividingBy: 60))
+    }
 }

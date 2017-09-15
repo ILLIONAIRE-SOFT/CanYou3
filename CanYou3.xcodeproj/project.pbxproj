@@ -206,6 +206,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071B0F0E1F6CCABD007214A9 /* HealthInfo */ = {
+			isa = PBXGroup;
+			children = (
+				07069F241F6C3EA9004F4A04 /* HealthInfo.storyboard */,
+				07069F261F6C3EC9004F4A04 /* HealthInfoTableViewController.swift */,
+				07069F281F6C402D004F4A04 /* HealthInfoTableViewCell.swift */,
+			);
+			name = HealthInfo;
+			sourceTree = "<group>";
+		};
 		07592B131F5E84E900986944 = {
 			isa = PBXGroup;
 			children = (
@@ -382,7 +392,7 @@
 				0776969A1F688426000BC687 /* Storyboards */,
 				077696861F688106000BC687 /* SettingsTableViewController.swift */,
 				077696831F687FBD000BC687 /* Settings.storyboard */,
-				07069F281F6C402D004F4A04 /* HealthInfoTableViewCell.swift */,
+				071B0F0E1F6CCABD007214A9 /* HealthInfo */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -398,7 +408,6 @@
 				077696961F6883E8000BC687 /* SettingCigaretteDaily.storyboard */,
 				077696981F688404000BC687 /* SettingCigarettePrice.storyboard */,
 				077696921F68839B000BC687 /* SettingStartDate.storyboard */,
-				07069F241F6C3EA9004F4A04 /* HealthInfo.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -414,7 +423,6 @@
 				077696A41F6885B5000BC687 /* SettingCigaretteDailyTableViewController.swift */,
 				077696A61F6885DC000BC687 /* SettingCigarettePriceTableViewController.swift */,
 				077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */,
-				07069F261F6C3EC9004F4A04 /* HealthInfoTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

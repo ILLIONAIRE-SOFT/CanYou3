@@ -43,6 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1" y="36"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="lB0-ry-DS1">
@@ -149,8 +150,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="하루 평균 흡연량이 어떻게 되시나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-mW-TJx">
-                                <rect key="frame" x="16" y="141" width="343" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하루 평균 흡연량이 어떻게 되시나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-mW-TJx">
+                                <rect key="frame" x="16" y="138" width="343" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="XDN-7G-bYQ"/>
                                 </constraints>
@@ -230,6 +231,7 @@
                             <constraint firstItem="sBx-mW-TJx" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="QS7-RP-R4D"/>
                             <constraint firstItem="nAK-L5-GaW" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="Ykk-Ot-XQT"/>
                             <constraint firstItem="sBx-mW-TJx" firstAttribute="leading" secondItem="Hl2-Gg-H1r" secondAttribute="leadingMargin" id="cCK-yw-Xjh"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="top" secondItem="sBx-mW-TJx" secondAttribute="bottom" constant="30" id="epT-Wa-5Yt"/>
                             <constraint firstItem="hiN-kC-kOp" firstAttribute="centerY" secondItem="Hl2-Gg-H1r" secondAttribute="centerY" id="sCH-PN-YHD"/>
                             <constraint firstItem="hiN-kC-kOp" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="xCp-N4-ccq"/>
                         </constraints>

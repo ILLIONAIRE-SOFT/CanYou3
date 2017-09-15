@@ -38,7 +38,7 @@ class BaseTableViewController: UITableViewController {
     }
     
     // MARK : - Animation
-    func closeWith(transition: CATransition){
+    func popViewControllerWith(transition: CATransition){
         if let nc = self.navigationController {
             nc.view.layer.add(transition, forKey: nil)
             nc.popViewController(animated: false)

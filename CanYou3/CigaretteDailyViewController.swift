@@ -35,9 +35,9 @@ class CigaretteDailyViewController: BaseBackgroundViewController {
         }
         dc.currentUser.cigaretteDaily = value
         dc.currentUser.startDate = NSDate()
-        //dc.currentUser.isFirst = false
+        dc.currentUser.isFirst = false
         dc.currentUser.isFirst = true
-//        dc.initData()
+        dc.initData()
         dc.saveContext()
         
         

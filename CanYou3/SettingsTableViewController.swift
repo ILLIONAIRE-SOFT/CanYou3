@@ -65,9 +65,4 @@ class SettingsTableViewController: BaseTableViewController {
         numberFormatter.numberStyle = .decimal
         cigarettePriceLabel.text = numberFormatter.string(from: NSNumber(value: dc.currentUser.cigarettePrice))!
     }
-    
-    @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
-        let transition = AnimationController.popDownTransition
-        self.closeWith(transition: transition)
-    }
 }

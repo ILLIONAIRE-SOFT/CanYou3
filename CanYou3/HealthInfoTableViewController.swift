@@ -10,14 +10,15 @@ import UIKit
 
 class HealthInfoTableViewController: BaseTableViewController {
     // MARK : - Properties
-    var items: [HealthInfo] = [HealthInfo]()
+    var items: [HealthInfo] {
+        guard let fetch = self.dc.fetchHealthInfos() else {
+            return [HealthInfo]()
+        }
+        return fetch
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let fetchedItems = self.dc.fetchHealthInfos() {
-            items = fetchedItems
-        }
     }
     
     override func didReceiveMemoryWarning() {

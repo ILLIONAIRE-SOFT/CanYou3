@@ -71,18 +71,7 @@ public extension UIView {
             self.setNeedsLayout()
         }
     }
-    
-    @IBInspectable public var clipsToBound: Bool {
-        get {
-            return self.clipsToBounds
-        }
-        
-        set {
-            self.clipsToBounds = newValue
-            self.setNeedsLayout()
-        }
-    }
-    
+
     func fadeTransition(for duration: CFTimeInterval) {
         let animation = CATransition().then {
             $0.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)

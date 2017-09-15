@@ -71,7 +71,7 @@ class BaseViewController: UIViewController {
     }
     
     // MARK : Animation
-    func presentWith(transition: CATransition, viewController: UIViewController){
+    func pushViewControllerWith(transition: CATransition, viewController: UIViewController){
         if let nc = self.navigationController {
             nc.view.layer.add(transition, forKey: nil)
             nc.pushViewController(viewController, animated: false)
