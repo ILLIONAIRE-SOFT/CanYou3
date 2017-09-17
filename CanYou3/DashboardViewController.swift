@@ -37,6 +37,15 @@ class DashboardViewController: BaseBackgroundViewController {
         present(vc, animated: true, completion: nil)
     }
     
+    // MARK: Button Actions
+    @IBAction func rewardButtonTapped(_ sender: UIButton) {
+        let vc = viewController(forStoryboardName: StoryboardName.reward)
+        
+        vc.heroModalAnimationType = .fade
+        
+        present(vc, animated: true, completion: nil)
+    }
+    
     @IBAction func badgeButtonTapped(_ sender: UIButton) {
         let vc = viewController(forStoryboardName: StoryboardName.badge)
         

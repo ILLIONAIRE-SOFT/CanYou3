@@ -13,7 +13,7 @@ import Hero
 import Then
 
 class BaseViewController: UIViewController {
-    // dataController
+    // DataController
     lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
     var currentUser: User {
         return dc.currentUser
@@ -79,6 +79,7 @@ class BaseViewController: UIViewController {
     }
 }
 
+// NotificationDeleagte
 extension BaseViewController: UNUserNotificationCenterDelegate{
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         

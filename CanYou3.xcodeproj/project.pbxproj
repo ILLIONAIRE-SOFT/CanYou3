@@ -62,6 +62,9 @@
 		077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */; };
 		077696AB1F688750000BC687 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696AA1F688750000BC687 /* AnimationController.swift */; };
 		077696AD1F688A95000BC687 /* SettingVersion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696AC1F688A95000BC687 /* SettingVersion.storyboard */; };
+		07901DAF1F6E5266006FC6DC /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07901DAE1F6E5266006FC6DC /* Reward.storyboard */; };
+		07901DB11F6E5272006FC6DC /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07901DB01F6E5272006FC6DC /* RewardViewController.swift */; };
+		07901DB31F6E527B006FC6DC /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07901DB21F6E527B006FC6DC /* RewardTableViewCell.swift */; };
 		07F4E6541F6A329B0040CC1B /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4E6531F6A329B0040CC1B /* Versions.swift */; };
 		07F4E6581F6A38E60040CC1B /* Formmatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4E6571F6A38E60040CC1B /* Formmatter.swift */; };
 		07F6642C1F6BD446004DE43B /* HealthInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F6642B1F6BD446004DE43B /* HealthInfoStore.swift */; };
@@ -156,6 +159,9 @@
 		077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
 		077696AA1F688750000BC687 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		077696AC1F688A95000BC687 /* SettingVersion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingVersion.storyboard; sourceTree = "<group>"; };
+		07901DAE1F6E5266006FC6DC /* Reward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
+		07901DB01F6E5272006FC6DC /* RewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		07901DB21F6E527B006FC6DC /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		07AD25EC08D8512FF8B598B5 /* Pods-CanYou3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanYou3.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanYou3/Pods-CanYou3.release.xcconfig"; sourceTree = "<group>"; };
 		07F4E6521F6A2DB60040CC1B /* CanYou 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CanYou 2.xcdatamodel"; sourceTree = "<group>"; };
 		07F4E6531F6A329B0040CC1B /* Versions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versions.swift; sourceTree = "<group>"; };
@@ -241,8 +247,9 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
-				07693A641F6C00FE00249B64 /* Badge */,
 				076A5A131F66C20800BCB8F9 /* Models */,
+				07901DB41F6E53AC006FC6DC /* Reward */,
+				07693A641F6C00FE00249B64 /* Badge */,
 				076A5A0C1F66BA6E00BCB8F9 /* Base */,
 				076A5A041F66B56400BCB8F9 /* Dashboard */,
 				077696851F687FC6000BC687 /* Settings */,
@@ -338,14 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				07F6642F1F6BD590004DE43B /* Store */,
-				0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */,
-				0776966D1F687030000BC687 /* Reward+CoreDataProperties.swift */,
-				0776966E1F687030000BC687 /* HealthInfo+CoreDataClass.swift */,
-				0776966F1F687030000BC687 /* HealthInfo+CoreDataProperties.swift */,
-				077696701F687030000BC687 /* Badge+CoreDataClass.swift */,
-				077696711F687030000BC687 /* Badge+CoreDataProperties.swift */,
-				077696721F687030000BC687 /* User+CoreDataClass.swift */,
-				077696731F687030000BC687 /* User+CoreDataProperties.swift */,
+				07901DAD1F6E522B006FC6DC /* Models */,
 				076A5A101F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld */,
 			);
 			name = Models;
@@ -425,6 +425,32 @@
 				077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		07901DAD1F6E522B006FC6DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */,
+				0776966D1F687030000BC687 /* Reward+CoreDataProperties.swift */,
+				0776966E1F687030000BC687 /* HealthInfo+CoreDataClass.swift */,
+				0776966F1F687030000BC687 /* HealthInfo+CoreDataProperties.swift */,
+				077696701F687030000BC687 /* Badge+CoreDataClass.swift */,
+				077696711F687030000BC687 /* Badge+CoreDataProperties.swift */,
+				077696721F687030000BC687 /* User+CoreDataClass.swift */,
+				077696731F687030000BC687 /* User+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		07901DB41F6E53AC006FC6DC /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				07901DAE1F6E5266006FC6DC /* Reward.storyboard */,
+				07901DB01F6E5272006FC6DC /* RewardViewController.swift */,
+				07901DB21F6E527B006FC6DC /* RewardTableViewCell.swift */,
+			);
+			name = Reward;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		07F4E6591F6A38ED0040CC1B /* Utilities */ = {
@@ -602,6 +628,7 @@
 				076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */,
 				077696841F687FBD000BC687 /* Settings.storyboard in Resources */,
 				077696931F68839B000BC687 /* SettingStartDate.storyboard in Resources */,
+				07901DAF1F6E5266006FC6DC /* Reward.storyboard in Resources */,
 				07F6643A1F6BFFAE004DE43B /* Badge.storyboard in Resources */,
 				077696971F6883E8000BC687 /* SettingCigaretteDaily.storyboard in Resources */,
 			);
@@ -814,6 +841,7 @@
 				077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */,
 				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
 				07F4E6541F6A329B0040CC1B /* Versions.swift in Sources */,
+				07901DB31F6E527B006FC6DC /* RewardTableViewCell.swift in Sources */,
 				076A5A121F66C1FB00BCB8F9 /* CanYou3.xcdatamodeld in Sources */,
 				07069F271F6C3EC9004F4A04 /* HealthInfoTableViewController.swift in Sources */,
 				077696781F687030000BC687 /* Badge+CoreDataClass.swift in Sources */,
@@ -828,6 +856,7 @@
 				0776967A1F687030000BC687 /* User+CoreDataClass.swift in Sources */,
 				07F4E6581F6A38E60040CC1B /* Formmatter.swift in Sources */,
 				07F664311F6BD666004DE43B /* BadgeStore.swift in Sources */,
+				07901DB11F6E5272006FC6DC /* RewardViewController.swift in Sources */,
 				077696801F687C82000BC687 /* CoreDataName.swift in Sources */,
 				0776968D1F688339000BC687 /* SettingNameTableViewController.swift in Sources */,
 				0701B3DB1F694F3900A03E11 /* EntityName.swift in Sources */,

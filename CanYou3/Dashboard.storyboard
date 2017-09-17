@@ -174,18 +174,29 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-cR-4Mu">
                                                         <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="6em-Vo-McQ">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reward-Star" translatesAutoresizingMaskIntoConstraints="NO" id="6em-Vo-McQ">
                                                                 <rect key="frame" x="8" y="8" width="83" height="83"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="rewardImage"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4W-Mo-Gsh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="No Badge!">
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                                <state key="normal" title="Reward">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="rewardName"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="rewardButtonTapped:" destination="nuV-ql-xtG" eventType="touchUpInside" id="hI0-WS-ORu"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="V4W-Mo-Gsh" secondAttribute="bottom" id="7dp-tU-pte"/>
                                                             <constraint firstAttribute="trailing" secondItem="6em-Vo-McQ" secondAttribute="trailing" constant="8" id="C3b-uJ-hUd"/>
@@ -201,6 +212,7 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="rewardBackground"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-JQ-s6G">
@@ -380,6 +392,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Reward-Star" width="256" height="256"/>
         <image name="noBadge" width="150" height="150"/>
         <image name="settings" width="1000" height="1000"/>
     </resources>
