@@ -32,7 +32,7 @@ struct StoryboardName {
         get {
             return
                 [
-                    [self.settingsName, self.settingsGender, self.settingsBirthDate, self.settingsStartDate, self.healthInfo],
+                    [self.settingsName, self.settingsGender, self.settingsBirthDate, self.settingsStartDate],
                     [self.settingsAlarm, self.settingsCigaretteDaily, self.settingsCigarettePrice],
                     [self.settingsVersion]
                 ]

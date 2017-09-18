@@ -17,7 +17,7 @@ class WelcomeViewController: BaseBackgroundViewController {
         let storyboard = UIStoryboard(name: StoryboardName.main, bundle: Bundle.main)
         let vc = storyboard.instantiateViewController(withIdentifier: ViewControllerName.cigaretteDaily) as! CigaretteDailyViewController
         
-        vc.heroModalAnimationType = .pageIn(direction: .left)
+        vc.heroModalAnimationType = .fade
         self.hero_replaceViewController(with: vc)
 //        self.present(vc, animated: true, completion: nil)
         

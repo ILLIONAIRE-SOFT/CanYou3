@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Then
 
 class HealthInfoStore: BaseStore {
     static func createItem(name: String, time: Double, content: String) {

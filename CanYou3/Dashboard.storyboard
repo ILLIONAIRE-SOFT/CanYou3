@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nuV-ql-xtG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="a4c-Eo-53Q">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,95 +28,26 @@
                                 <rect key="frame" x="16" y="20" width="288" height="484"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-0u-D50" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="30" y="107" width="228" height="357"/>
+                                        <rect key="frame" x="30" y="226" width="228" height="228"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IvP-Fh-eUK">
-                                                <rect key="frame" x="0.0" y="0.0" width="228" height="99"/>
-                                                <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnX-4G-Mw8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="WXK-Ag-4YI">
-                                                                <rect key="frame" x="8" y="8" width="83" height="83"/>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwZ-k6-P40">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="No Badge!">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="cwZ-k6-P40" secondAttribute="trailing" id="0Va-MK-AlZ"/>
-                                                            <constraint firstAttribute="width" secondItem="wnX-4G-Mw8" secondAttribute="height" multiplier="1:1" id="IWJ-6e-kYE"/>
-                                                            <constraint firstItem="WXK-Ag-4YI" firstAttribute="leading" secondItem="wnX-4G-Mw8" secondAttribute="leading" constant="8" id="NDT-FF-syx"/>
-                                                            <constraint firstAttribute="bottom" secondItem="WXK-Ag-4YI" secondAttribute="bottom" constant="8" id="dTp-tC-c0U"/>
-                                                            <constraint firstAttribute="trailing" secondItem="WXK-Ag-4YI" secondAttribute="trailing" constant="8" id="g60-aa-lnf"/>
-                                                            <constraint firstAttribute="bottom" secondItem="cwZ-k6-P40" secondAttribute="bottom" id="iGt-kz-3ui"/>
-                                                            <constraint firstItem="WXK-Ag-4YI" firstAttribute="top" secondItem="wnX-4G-Mw8" secondAttribute="top" constant="8" id="qCU-eJ-tqT"/>
-                                                            <constraint firstItem="cwZ-k6-P40" firstAttribute="top" secondItem="wnX-4G-Mw8" secondAttribute="top" id="s72-g4-PZL"/>
-                                                            <constraint firstItem="cwZ-k6-P40" firstAttribute="leading" secondItem="wnX-4G-Mw8" secondAttribute="leading" id="xyX-ez-Juu"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vZ-wB-SAG">
-                                                        <rect key="frame" x="129" y="0.0" width="99" height="99"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="5Vv-lt-L60">
-                                                                <rect key="frame" x="8" y="8" width="83" height="83"/>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-HD-MxO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="No Badge!">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="5Vv-lt-L60" secondAttribute="trailing" constant="8" id="1NJ-1o-anx"/>
-                                                            <constraint firstItem="5Vv-lt-L60" firstAttribute="top" secondItem="9vZ-wB-SAG" secondAttribute="top" constant="8" id="1Nz-Bo-z2D"/>
-                                                            <constraint firstItem="Um4-HD-MxO" firstAttribute="top" secondItem="9vZ-wB-SAG" secondAttribute="top" id="5wR-QT-aO8"/>
-                                                            <constraint firstAttribute="bottom" secondItem="5Vv-lt-L60" secondAttribute="bottom" constant="8" id="A8L-m1-gp5"/>
-                                                            <constraint firstItem="5Vv-lt-L60" firstAttribute="leading" secondItem="9vZ-wB-SAG" secondAttribute="leading" constant="8" id="Fvy-HX-pm6"/>
-                                                            <constraint firstAttribute="bottom" secondItem="Um4-HD-MxO" secondAttribute="bottom" id="KgA-WN-KHH"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Um4-HD-MxO" secondAttribute="trailing" id="NQR-X3-VoR"/>
-                                                            <constraint firstItem="Um4-HD-MxO" firstAttribute="leading" secondItem="9vZ-wB-SAG" secondAttribute="leading" id="gFi-TZ-uH5"/>
-                                                            <constraint firstAttribute="width" secondItem="9vZ-wB-SAG" secondAttribute="height" multiplier="1:1" id="n0b-W8-Mgf"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="06E-1I-Ifr">
-                                                <rect key="frame" x="0.0" y="129" width="228" height="99"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="99"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-aX-GBq">
                                                         <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="2kN-zz-1j6">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep5" translatesAutoresizingMaskIntoConstraints="NO" id="2kN-zz-1j6">
                                                                 <rect key="frame" x="8" y="8" width="83" height="83"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-XM-BjJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="No Badge!">
+                                                                <state key="normal" title="Terry">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.95919519659999997" green="0.46731954809999998" blue="0.4639127851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="2kN-zz-1j6" firstAttribute="leading" secondItem="Gsv-aX-GBq" secondAttribute="leading" constant="8" id="3iU-38-Zs0"/>
                                                             <constraint firstAttribute="width" secondItem="Gsv-aX-GBq" secondAttribute="height" multiplier="1:1" id="3uc-gd-PSc"/>
@@ -143,12 +74,12 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKS-5t-rnk">
                                                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="No Badge!">
+                                                                <state key="normal" title="머넣지">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="WgT-WR-jhX" secondAttribute="bottom" constant="8" id="1bQ-GJ-utY"/>
                                                             <constraint firstItem="WgT-WR-jhX" firstAttribute="top" secondItem="gZO-SS-Blx" secondAttribute="top" constant="8" id="BsK-JF-dAH"/>
@@ -169,7 +100,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-br-Xjz">
-                                                <rect key="frame" x="0.0" y="258" width="228" height="99"/>
+                                                <rect key="frame" x="0.0" y="129" width="228" height="99"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-cR-4Mu">
                                                         <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
@@ -226,7 +157,7 @@
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-rb-it5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="No Badge!">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
@@ -310,19 +241,36 @@
                                             <constraint firstItem="1Wk-mW-fEP" firstAttribute="top" secondItem="KeH-fe-sQu" secondAttribute="top" id="ydc-SS-4kl"/>
                                         </constraints>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-Wl-4Q6">
+                                        <rect key="frame" x="16" y="102" width="256" height="2"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="4kG-m2-R8v"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="절약한 금액 등 정보 ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-gD-oyP">
+                                        <rect key="frame" x="30" y="142" width="144" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="YvL-0u-D50" secondAttribute="bottom" constant="20" id="72w-qM-hAo"/>
+                                    <constraint firstAttribute="bottom" secondItem="YvL-0u-D50" secondAttribute="bottom" constant="30" id="72w-qM-hAo"/>
                                     <constraint firstItem="YvL-0u-D50" firstAttribute="centerX" secondItem="GeW-Hj-JTV" secondAttribute="centerX" id="EQV-nY-zve"/>
                                     <constraint firstAttribute="trailing" secondItem="KeH-fe-sQu" secondAttribute="trailing" constant="30" id="NfE-cE-wWe"/>
                                     <constraint firstItem="YvL-0u-D50" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GeW-Hj-JTV" secondAttribute="leading" constant="30" id="UQa-Ll-cEE"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YvL-0u-D50" secondAttribute="trailing" priority="750" constant="30" id="YAa-Qo-oCP"/>
+                                    <constraint firstItem="kWr-Wl-4Q6" firstAttribute="top" secondItem="KeH-fe-sQu" secondAttribute="bottom" constant="8" id="YkQ-Xq-MmI"/>
                                     <constraint firstItem="KeH-fe-sQu" firstAttribute="leading" secondItem="YvL-0u-D50" secondAttribute="leading" id="ZOF-ml-yZJ"/>
                                     <constraint firstItem="ah2-VQ-kvq" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="top" constant="16" id="bbs-kh-A1V"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWr-Wl-4Q6" secondAttribute="trailing" constant="16" id="gQG-IM-7ST"/>
                                     <constraint firstItem="ah2-VQ-kvq" firstAttribute="leading" secondItem="YvL-0u-D50" secondAttribute="leading" id="gsa-R1-dPh"/>
                                     <constraint firstAttribute="centerX" secondItem="ah2-VQ-kvq" secondAttribute="trailing" constant="10" id="hkO-VM-hgf"/>
                                     <constraint firstItem="KeH-fe-sQu" firstAttribute="top" secondItem="ah2-VQ-kvq" secondAttribute="bottom" constant="16" id="nmb-a2-sho"/>
+                                    <constraint firstItem="kWr-Wl-4Q6" firstAttribute="leading" secondItem="GeW-Hj-JTV" secondAttribute="leading" constant="16" id="qyM-oA-qft"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -351,14 +299,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="healthInfoText"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-Rp-eIG" customClass="GTProgressBar" customModule="GTProgressBar">
                                         <rect key="frame" x="0.0" y="32" width="240" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="dhc-sB-0cL"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="healthInfoProgress"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aK3-R3-1iM" appends="YES" id="VwM-rh-DYp"/>
+                                </connections>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -380,20 +338,55 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="badgeButton" destination="PVI-rb-it5" id="eSk-hB-n6G"/>
+                        <outlet property="badgeImageView" destination="WcY-69-nSY" id="vHS-Ia-SZr"/>
+                        <outlet property="badgeView" destination="4mA-JQ-s6G" id="lbF-cR-lRT"/>
                         <outlet property="contentLabel" destination="Ooe-2c-VXU" id="z8W-K5-jkm"/>
                         <outlet property="dayLabel" destination="qol-2E-wcZ" id="hV5-Jg-Ae1"/>
                         <outlet property="progressView" destination="KJg-Rp-eIG" id="CWt-Bp-FIX"/>
+                        <outlet property="rewardButton" destination="V4W-Mo-Gsh" id="WYV-Q4-AHb"/>
+                        <outlet property="rewardImageView" destination="6em-Vo-McQ" id="6Sg-lp-S92"/>
+                        <outlet property="rewardView" destination="GtE-cR-4Mu" id="ptG-tU-yJo"/>
                         <outlet property="timeLabel" destination="1Wk-mW-fEP" id="2Zw-Sv-tcW"/>
+                        <outlet property="view1" destination="Gsv-aX-GBq" id="Fuf-tx-YKt"/>
+                        <outlet property="view2" destination="gZO-SS-Blx" id="2aJ-68-5xY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lM7-3N-DnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aK3-R3-1iM">
+                    <connections>
+                        <action selector="healthInfoTapped:" destination="nuV-ql-xtG" id="Hhu-k4-AkK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1060" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2056.875" y="133.09859154929578"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c2U-sj-vBp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="a4c-Eo-53Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ahf-0f-S5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="nuV-ql-xtG" kind="relationship" relationship="rootViewController" id="CQC-FK-Fhh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beD-sn-Piz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059.375" y="133.09859154929578"/>
         </scene>
     </scenes>
     <resources>
         <image name="Reward-Star" width="256" height="256"/>
         <image name="noBadge" width="150" height="150"/>
         <image name="settings" width="1000" height="1000"/>
+        <image name="sheep5" width="250" height="250"/>
     </resources>
 </document>

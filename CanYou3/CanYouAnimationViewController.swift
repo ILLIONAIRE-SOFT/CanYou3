@@ -25,7 +25,7 @@ class CanYouAnimationViewController: BaseViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.7, execute: {
             // Instantiate View Controller
             let vc: UIViewController!
-            if self.dc.currentUser.isFirst {
+            if self.currentUser.isFirst {
                 let storyboard = UIStoryboard(name: StoryboardName.main, bundle: Bundle.main)
                 vc = storyboard.instantiateViewController(withIdentifier: ViewControllerName.welcome)
             } else {
@@ -34,9 +34,8 @@ class CanYouAnimationViewController: BaseViewController {
             
             vc.modalTransitionStyle = .crossDissolve
             
-            self.present(vc, animated: true, completion: nil)
+            self.hero_replaceViewController(with: vc)
         })
-        
     }
     
     

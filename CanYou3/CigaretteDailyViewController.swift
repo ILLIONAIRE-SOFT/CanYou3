@@ -36,13 +36,13 @@ class CigaretteDailyViewController: BaseBackgroundViewController {
         dc.currentUser.cigaretteDaily = value
         dc.currentUser.startDate = NSDate()
         dc.currentUser.isFirst = false
-        dc.currentUser.isFirst = true
         dc.initData()
         dc.saveContext()
         
         
         
         let vc = viewController(forStoryboardName: StoryboardName.dashboard)
+        vc.heroModalAnimationType = .fade
         
         self.hero_replaceViewController(with: vc)
     }

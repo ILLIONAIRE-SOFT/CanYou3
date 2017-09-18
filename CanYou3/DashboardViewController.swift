@@ -15,7 +15,7 @@ class DashboardViewController: BaseBackgroundViewController {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var dayLabel: UILabel!
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var terryImageView: UIImageView!
     
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var progressView: GTProgressBar!
@@ -26,58 +26,84 @@ class DashboardViewController: BaseBackgroundViewController {
     @IBOutlet var savedCigView: UIView!
     @IBOutlet var savedCigLabel: UILabel!
     
+    // Badge
+    @IBOutlet var badgeImageView: UIImageView!
+    @IBOutlet var badgeButton: UIButton!
+    @IBOutlet var badgeView: UIView!
+    
+    // Reward
+    @IBOutlet var rewardImageView: UIImageView!
+    @IBOutlet var rewardButton: UIButton!
+    @IBOutlet var rewardView: UIView!
+    
+    @IBOutlet var view1: UIView!
+    @IBOutlet var view2: UIView!
+    
     var timer: Timer?
+    
+    // Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.hideNavigationBar = true
+    }
     
     // Present SettingTableView with Custom animation
     @IBAction func settingButtonTapped(_ sender: UIButton) {
         // push view controller but animate modally
         let vc = viewController(forStoryboardName: StoryboardName.settings)
-        vc.heroModalAnimationType = .cover(direction: .up)
+        vc.heroModalAnimationType = .selectBy(presenting:.cover(direction:.up), dismissing:.uncover(direction:.down))
         
-        present(vc, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     // MARK: Button Actions
     @IBAction func rewardButtonTapped(_ sender: UIButton) {
-        let vc = viewController(forStoryboardName: StoryboardName.reward)
+        let vc = viewController(forStoryboardName: StoryboardName.reward) as! RewardViewController
         
         vc.heroModalAnimationType = .fade
         
-        present(vc, animated: true, completion: nil)
+        self.navigationController!.pushViewController(vc, animated: true)
     }
     
     @IBAction func badgeButtonTapped(_ sender: UIButton) {
-        let vc = viewController(forStoryboardName: StoryboardName.badge)
+        let vc = viewController(forStoryboardName: StoryboardName.badge) as! BadgeViewController
         
         vc.heroModalAnimationType = .fade
         
-        present(vc, animated: true, completion: nil)
+        self.navigationController!.pushViewController(vc, animated: true)
     }
     
+    @IBAction func healthInfoTapped(_ sender: UIGestureRecognizer) {
+        let vc = viewController(forStoryboardName: StoryboardName.healthInfo)
+        
+        vc.heroModalAnimationType = .fade
+        
+        DispatchQueue.main.async {
+            self.present(vc, animated: true, completion: nil)
+        }
+        
+    }
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
+        setColors()
+        view1.heroModifiers = [.fade, .translate(y:20)]
+        view2.heroModifiers = [.fade, .translate(y:20)]
+        badgeView.heroModifiers = [.fade, .translate(y:20)]
+        rewardView.heroModifiers = [.fade, .translate(y:20)]
     }
     
-    // MARK: - Hide NavigationBar only for this ViewController
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        if let navigationController = self.navigationController {
-            // Hide the navigation bar on the this view controller
-            navigationController.setNavigationBarHidden(true, animated: animated)
-        }
+    // Color
+    func setColors(){
+        self.badgeView.backgroundColor = Color.badge
+        self.rewardView.backgroundColor = Color.reward
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        if let navigationController = self.navigationController {
-            // Show the navigation bar on other view controllers
-            navigationController.setNavigationBarHidden(false, animated: animated)
-        }
-    }
-    
+    // Timer
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateLabels), userInfo: nil, repeats: true)
     }

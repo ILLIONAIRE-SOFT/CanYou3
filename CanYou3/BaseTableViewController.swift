@@ -10,7 +10,8 @@ import UIKit
 
 class BaseTableViewController: UITableViewController {
     // dataController
-    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
+//    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
+    var hideNavigationBar: Bool = false
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,11 +38,39 @@ class BaseTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    // MARK : Methods for Keyboard
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     // MARK : - Animation
     func popViewControllerWith(transition: CATransition){
         if let nc = self.navigationController {
             nc.view.layer.add(transition, forKey: nil)
             nc.popViewController(animated: false)
+        }
+    }
+}
+
+// MARK: - Hide NavigationBar only for this ViewController
+extension BaseTableViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.hideKeyboardWhenTappedAround()
+        if let navigationController = self.navigationController {
+            if !hideNavigationBar {
+                navigationController.setNavigationBarHidden(false, animated: animated)
+            } else {
+                // Hide the navigation bar on the this view controller
+                navigationController.setNavigationBarHidden(true, animated: animated)
+            }
         }
     }
 }

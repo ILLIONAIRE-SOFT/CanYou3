@@ -14,10 +14,11 @@ import Then
 
 class BaseViewController: UIViewController {
     // DataController
-    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
-    var currentUser: User {
-        return dc.currentUser
-    }
+    //    lazy var dc = (UIApplication.shared.delegate as! AppDelegate).dataController
+    //    var currentUser: User {
+    //        return dc.currentUser
+    //    }
+    var hideNavigationBar: Bool = false
     
     // MARK : Memory Management
     override func didReceiveMemoryWarning() {
@@ -43,11 +44,6 @@ class BaseViewController: UIViewController {
     // MARK : ViewController Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK : Methods for Keyboard
@@ -90,5 +86,32 @@ extension BaseViewController: UNUserNotificationCenterDelegate{
         
         print("Notification being triggered")
         completionHandler( [.alert,.sound,.badge])
+    }
+}
+
+// MARK: - Hide NavigationBar only for this ViewController
+extension BaseViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.hideKeyboardWhenTappedAround()
+        if let navigationController = self.navigationController {
+            if !hideNavigationBar {
+                navigationController.setNavigationBarHidden(false, animated: animated)
+            } else {
+                // Hide the navigation bar on the this view controller
+                navigationController.setNavigationBarHidden(true, animated: animated)
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if !hideNavigationBar { return }
+        //        if let navigationController = self.navigationController {
+        //            // Show the navigation bar on other view controllers
+        //            navigationController.setNavigationBarHidden(false, animated: animated)
+        //        }
     }
 }

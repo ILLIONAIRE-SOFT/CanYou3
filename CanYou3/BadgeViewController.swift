@@ -19,9 +19,17 @@ class BadgeViewController: BaseViewController {
     @IBOutlet var recentTitleLabel: UILabel!
     @IBOutlet var recentContentLabel: UILabel!
     
+    // Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.hideNavigationBar = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateRecentBadge()
+        
+        self.view.backgroundColor = Color.badge
     }
     
     override func didReceiveMemoryWarning() {

@@ -1,5 +1,5 @@
 //
-//  Versions.swift
+//  Version.swift
 //  CanYou3
 //
 //  Created by Mac Pro on 2017. 9. 14..
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Versions {
+struct Version {
     struct VersionInfo {
         var version: String
         var content: String

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8w0-Kb-nWm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vnJ-3Y-3WW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                             <tableViewSection headerTitle="User Infomation" id="3p2-2a-TSn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ar2-tz-Tzp" userLabel="이름">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ar2-tz-Tzp" id="y07-4a-K1Y">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -61,7 +61,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="d9G-hf-i42" userLabel="성별">
-                                        <rect key="frame" x="0.0" y="106" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="105.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d9G-hf-i42" id="P9V-bK-eRI">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -94,7 +94,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="usA-k1-hmY" userLabel="생년월일">
-                                        <rect key="frame" x="0.0" y="156" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="usA-k1-hmY" id="oVi-hC-ox5">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -127,7 +127,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="q3y-mX-zSv" userLabel="금연 시작일">
-                                        <rect key="frame" x="0.0" y="206" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="205.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q3y-mX-zSv" id="7vc-Lm-69d">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -159,34 +159,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="ugU-aF-Nhu" userLabel="건강 정보">
-                                        <rect key="frame" x="0.0" y="256" width="375" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugU-aF-Nhu" id="Tcv-Qb-xw5">
-                                            <rect key="frame" x="0.0" y="0.0" width="308" height="49"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Health Infomation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcL-RZ-vqW">
-                                                    <rect key="frame" x="8" y="14" width="284" height="21.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pcL-RZ-vqW" secondAttribute="bottom" constant="6" id="J4b-Wm-Swi"/>
-                                                <constraint firstItem="pcL-RZ-vqW" firstAttribute="top" secondItem="Tcv-Qb-xw5" secondAttribute="topMargin" constant="6" id="Lgs-LX-sv9"/>
-                                                <constraint firstItem="pcL-RZ-vqW" firstAttribute="leading" secondItem="Tcv-Qb-xw5" secondAttribute="leadingMargin" id="ual-4Z-bvf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="pcL-RZ-vqW" secondAttribute="trailing" constant="8" id="y5H-Fe-WZ1"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Personal Settings" id="wBg-mR-wi9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dzT-xS-GCS" userLabel="랜덤 알람 설정">
-                                        <rect key="frame" x="0.0" y="362" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="311.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dzT-xS-GCS" id="5U1-Qq-MuH">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -219,7 +197,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bLD-PK-A0w" userLabel="하루 평균 흡연량">
-                                        <rect key="frame" x="0.0" y="412" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="361.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bLD-PK-A0w" id="OOa-wg-tj5">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -252,7 +230,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="FC2-kN-T3T" userLabel="담배 가격 (1갑)">
-                                        <rect key="frame" x="0.0" y="462" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="411.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FC2-kN-T3T" id="Dk0-ZW-dgV">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -289,7 +267,7 @@
                             <tableViewSection headerTitle="Service" id="Xwh-xT-jRE">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="JhM-ob-U8u" userLabel="버전 정보">
-                                        <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="517.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JhM-ob-U8u" id="oTz-ze-A1F">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
@@ -322,7 +300,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="pKW-T1-9j5" userLabel="리뷰 작성">
-                                        <rect key="frame" x="0.0" y="618" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="567.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pKW-T1-9j5" id="JKm-PB-bda">
                                             <rect key="frame" x="0.0" y="0.0" width="328" height="49"/>
@@ -344,7 +322,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="mZO-Wm-w7K" userLabel="문의 및 의견">
-                                        <rect key="frame" x="0.0" y="668" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="617.5" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZO-Wm-w7K" id="ApS-Om-fIM">
                                             <rect key="frame" x="0.0" y="0.0" width="328" height="49"/>
@@ -374,7 +352,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Setting" id="X8K-aG-78S">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="taa-qo-Fuk">
+                        <barButtonItem key="rightBarButtonItem" image="close" id="taa-qo-Fuk">
                             <connections>
                                 <action selector="hero_dismissViewController" destination="eak-zK-PYy" id="tYD-b5-gnd"/>
                             </connections>
@@ -396,25 +374,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2si-kr-8vX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="67.916041979010501"/>
+            <point key="canvasLocation" x="2247.1999999999998" y="67.916041979010501"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="YY5-jN-bNw">
+        <scene sceneID="Hsb-GL-gyd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8w0-Kb-nWm" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3z-oF-VsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vnJ-3Y-3WW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qVY-SG-l3s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bAU-BP-crP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="eak-zK-PYy" kind="relationship" relationship="rootViewController" id="Ke6-sL-r3O"/>
+                        <segue destination="eak-zK-PYy" kind="relationship" relationship="rootViewController" id="MjN-oE-vPY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bxt-EE-lOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368.80000000000001" y="67.916041979010501"/>
+            <point key="canvasLocation" x="1308" y="67.916041979010501"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="close" width="24" height="24"/>
+    </resources>
 </document>

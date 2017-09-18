@@ -16,8 +16,16 @@ class RewardViewController: BaseViewController {
     @IBOutlet var cansLabel: UILabel!
     @IBOutlet var listButton: UIButton!
     
+    // Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.hideNavigationBar = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = Color.reward
     }
     
     override func viewWillAppear(_ animated: Bool) {

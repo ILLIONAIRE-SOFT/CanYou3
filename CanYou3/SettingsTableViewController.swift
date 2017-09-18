@@ -54,7 +54,7 @@ class SettingsTableViewController: BaseTableViewController {
         genderLabel.text = dc.currentUser.gender
         startDateLabel.text = Formatter.string(fromDate: dc.currentUser.startDate!)
         birthDateLabel.text = Formatter.string(fromDate: dc.currentUser.birthDate!)
-        versionLabel.text = Versions.latest.version
+        versionLabel.text = Version.latest.version
         if dc.currentUser.alarm {
             alarmLabel.text = "On"
         } else {

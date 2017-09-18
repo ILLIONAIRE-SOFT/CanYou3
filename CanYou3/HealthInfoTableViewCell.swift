@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import GTProgressBar
 
 class HealthInfoTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var progressView: UIProgressView!
+    @IBOutlet var progressView: GTProgressBar!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -41,7 +41,7 @@ class HealthInfoTableViewController: BaseTableViewController {
         
         let item = items[indexPath.row]
         
-        var percent: Float = Float(dc.currentUser.timeInterval / item.time)
+        var percent: CGFloat = CGFloat(dc.currentUser.timeInterval / item.time)
         
         if percent > 1.0 {
             percent = 1.0
@@ -50,9 +50,15 @@ class HealthInfoTableViewController: BaseTableViewController {
             cell.accessoryType = .none
         }
         
+        if item == dc.lastHealthInfo {
+            cell.titleLabel.heroID = "healthInfoText"
+            cell.progressView.heroID = "healthInfoProgress"
+//            self.tableView.contentOffset.y = cell.view
+        }
+        
         cell.titleLabel.text = item.name
         cell.progressView.progress = percent
-        print(percent)
+        
         
         return cell
     }
