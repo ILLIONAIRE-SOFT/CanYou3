@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Can You Animation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CanYouAnimationViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxz-IM-frK" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pxz-IM-frK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8rM-uj-BPF"/>
+                            <constraint firstItem="pxz-IM-frK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C5r-pG-hb5"/>
+                            <constraint firstItem="pxz-IM-frK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JTi-uW-mU8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pxz-IM-frK" secondAttribute="trailing" id="f0h-FA-1Ua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="pxz-IM-frK" id="Pl8-8u-wB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="36"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="lB0-ry-DS1">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="DKh-Uz-PW7" customClass="WelcomeViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oF3-x4-nvL"/>
+                        <viewControllerLayoutGuide type="bottom" id="XSF-z5-ZHo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yja-W3-dGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-yb-ihK">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <string key="text">금연이라는 어려운 결심을 하셨군요!
+시작이 반이라는 말이 있잖아요?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-uH-RJJ" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="127" y="597" width="120" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3b0-zO-yzl"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZhM-AC-4ZI"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.34509803919999998" green="0.74901960779999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.97851564489999998" green="0.70144316220000003" blue="0.91699220739999998" alpha="0.54422624139999998" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" red="1" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextTapped:" destination="DKh-Uz-PW7" eventType="touchUpInside" id="BSJ-wn-lSo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XSF-z5-ZHo" firstAttribute="top" secondItem="7hL-uH-RJJ" secondAttribute="bottom" constant="20" id="1ZV-Ng-rYg"/>
+                            <constraint firstItem="WFt-yb-ihK" firstAttribute="top" secondItem="oF3-x4-nvL" secondAttribute="bottom" id="2Mf-j2-343"/>
+                            <constraint firstItem="WFt-yb-ihK" firstAttribute="leading" secondItem="yja-W3-dGF" secondAttribute="leadingMargin" id="5hv-RS-3qU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WFt-yb-ihK" secondAttribute="trailing" id="TL7-XQ-AuO"/>
+                            <constraint firstItem="XSF-z5-ZHo" firstAttribute="top" secondItem="WFt-yb-ihK" secondAttribute="bottom" id="b8P-p0-m55"/>
+                            <constraint firstItem="7hL-uH-RJJ" firstAttribute="centerX" secondItem="yja-W3-dGF" secondAttribute="centerX" id="eCL-fu-5Te"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQJ-lM-q8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="36"/>
+        </scene>
+        <!--Cigarette Daily View Controller-->
+        <scene sceneID="JDp-K5-Qhc">
+            <objects>
+                <viewController storyboardIdentifier="CigaretteDailyViewController" id="cgL-rK-RdE" customClass="CigaretteDailyViewController" customModule="CanYou3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iEw-6k-HFs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y2g-tM-nCn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hl2-Gg-H1r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하루 평균 흡연량이 어떻게 되시나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBx-mW-TJx">
+                                <rect key="frame" x="16" y="138" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="XDN-7G-bYQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-L5-GaW" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="127" y="597" width="120" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="78g-XP-aH3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="AWY-rt-3IL"/>
+                                    <constraint firstAttribute="width" constant="120" id="gwD-f1-ffN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="npF-Dd-0UP"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.34509803919999998" green="0.74901960779999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.97851564489999998" green="0.70144316220000003" blue="0.91699220739999998" alpha="0.54422624139999998" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" red="1" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="button"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTapped:" destination="cgL-rK-RdE" eventType="touchUpInside" id="5D5-6t-CqT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-kC-kOp">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="i4b-7A-QB0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sBx-mW-TJx" secondAttribute="trailing" id="70d-MV-LgM"/>
+                            <constraint firstItem="Y2g-tM-nCn" firstAttribute="top" secondItem="nAK-L5-GaW" secondAttribute="bottom" constant="20" id="CVR-ip-fOK"/>
+                            <constraint firstItem="sBx-mW-TJx" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="QS7-RP-R4D"/>
+                            <constraint firstItem="nAK-L5-GaW" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="Ykk-Ot-XQT"/>
+                            <constraint firstItem="sBx-mW-TJx" firstAttribute="leading" secondItem="Hl2-Gg-H1r" secondAttribute="leadingMargin" id="cCK-yw-Xjh"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="top" secondItem="sBx-mW-TJx" secondAttribute="bottom" constant="30" id="epT-Wa-5Yt"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="centerY" secondItem="Hl2-Gg-H1r" secondAttribute="centerY" id="sCH-PN-YHD"/>
+                            <constraint firstItem="hiN-kC-kOp" firstAttribute="centerX" secondItem="Hl2-Gg-H1r" secondAttribute="centerX" id="xCp-N4-ccq"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="cigaretteDaily" destination="hiN-kC-kOp" id="B60-gR-Jpe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaL-z4-e4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="36"/>
+        </scene>
+    </scenes>
+</document>

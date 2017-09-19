@@ -19,13 +19,6 @@ class BadgeViewController: BaseViewController {
     @IBOutlet var recentTitleLabel: UILabel!
     @IBOutlet var recentContentLabel: UILabel!
     
-    var items: [Badge] {
-        if let badges = dc.fetchBadges() {
-            return badges
-        }
-        return [Badge]()
-    }
-    
     // Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -65,13 +58,13 @@ extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BadgeTableViewCell", for: indexPath) as! BadgeTableViewCell
-        let item: Badge = items[indexPath.row]
-//
+//        let item: Badge
+//        
 //        switch isDoneList {
 //        case true:
 //            item = BadgeStore.doneItems[indexPath.row]
@@ -79,12 +72,12 @@ extension BadgeViewController: UITableViewDelegate, UITableViewDataSource {
 //            item = BadgeStore.toDoItems[indexPath.row]
 //        }
 //        
-        cell.titleLabel.text = item.name
-        cell.contentLabel.text = item.content
-
-        if let image = item.image {
-            cell.badgeImageView?.image = image
-        }
+//        cell.titleLabel.text = item.name
+//        cell.contentLabel.text = item.content
+//        
+//        if let image = item.image {
+//            cell.badgeImageView?.image = image
+//        }
         
         return cell
     }

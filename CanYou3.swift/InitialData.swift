@@ -125,49 +125,49 @@ struct InitialData {
     static let badges: [BadgeAbstract] = [
         BadgeAbstract().then{
             $0.name = "24hours"
-            $0.imageName = "Badge-24hours"
+            $0.imageName = "BadgeAbstract-24hours"
             $0.content = "Good start !"
             $0.conditionType = .time
             $0.conditionValue = 86400
         },
         BadgeAbstract().then{
             $0.name = "48hours"
-            $0.imageName = "Badge-48hours"
+            $0.imageName = "BadgeAbstract-48hours"
             $0.content = "Nice"
             $0.conditionType = .time
             $0.conditionValue = 172800
         },
         BadgeAbstract().then{
             $0.name = "72hours"
-            $0.imageName = "Badge-72hours"
+            $0.imageName = "BadgeAbstract-72hours"
             $0.content = "Keep it up !"
             $0.conditionType = .time
             $0.conditionValue = 259200
         },
         BadgeAbstract().then{
             $0.name = "A Week"
-            $0.imageName = "Badge-7days"
+            $0.imageName = "BadgeAbstract-7days"
             $0.content = "Getting better"
             $0.conditionType = .time
             $0.conditionValue = 604800
         },
         BadgeAbstract().then{
             $0.name = "Money saved"
-            $0.imageName = "Badge-10000won"
+            $0.imageName = "BadgeAbstract-10000won"
             $0.content = "10,000 won saved!"
             $0.conditionType = .money
             $0.conditionValue = 10000
         },
         BadgeAbstract().then{
             $0.name = "Money saved"
-            $0.imageName = "Badge-moneysave"
+            $0.imageName = "BadgeAbstract-moneysave"
             $0.content = "100,000 won saved!"
             $0.conditionType = .money
             $0.conditionValue = 100000
         },
         BadgeAbstract().then{
             $0.name = "First reward"
-            $0.imageName = "Badge-1reward"
+            $0.imageName = "BadgeAbstract-1reward"
             $0.content = "You got a reward"
             $0.conditionType = .reward
             $0.conditionValue = 1

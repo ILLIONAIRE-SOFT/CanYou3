@@ -6,8 +6,8 @@
 //  Copyright © 2017년 Eric.Park. All rights reserved.
 //
 
+import Foundation
 import CoreData
-import UIKit
 
 enum ConditionType: String {
     case time
@@ -37,13 +37,5 @@ public class Badge: NSManagedObject {
         set {
             self.conditionTypeStr = newValue.rawValue
         }
-    }
-    
-    var image: UIImage? {
-        if let imageName = self.imageName,
-            let img = UIImage(named: imageName) {
-            return img
-        }
-        return nil
     }
 }
