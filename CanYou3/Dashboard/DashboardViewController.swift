@@ -36,8 +36,8 @@ class DashboardViewController: BaseBackgroundViewController {
     @IBOutlet var rewardButton: UIButton!
     @IBOutlet var rewardView: UIView!
     
-    @IBOutlet var view1: UIView!
-    @IBOutlet var view2: UIView!
+//    @IBOutlet var view1: UIView!
+//    @IBOutlet var view2: UIView!
     
     var timer: Timer?
     
@@ -52,10 +52,15 @@ class DashboardViewController: BaseBackgroundViewController {
         // push view controller but animate modally
         let vc = viewController(forStoryboardName: StoryboardName.settings)
         vc.heroModalAnimationType = .selectBy(presenting:.cover(direction:.up), dismissing:.uncover(direction:.down))
-        
-        DispatchQueue.main.async {
-            self.present(vc, animated: true, completion: nil)
+        if let nc = self.navigationController{
+//            nc.addChildViewController(vc)
+            nc.pushViewController(vc, animated: false)
         }
+        
+        
+//        DispatchQueue.main.async {
+//            self.present(vc, animated: true, completion: nil)
+//        }
     }
     
     // MARK: Button Actions
@@ -91,8 +96,8 @@ class DashboardViewController: BaseBackgroundViewController {
         super.viewDidLoad()
         startTimer()
         setColors()
-        view1.heroModifiers = [.fade, .translate(y:20)]
-        view2.heroModifiers = [.fade, .translate(y:20)]
+//        view1.heroModifiers = [.fade, .translate(y:20)]
+//        view2.heroModifiers = [.fade, .translate(y:20)]
         badgeView.heroModifiers = [.fade, .translate(y:20)]
         rewardView.heroModifiers = [.fade, .translate(y:20)]
     }

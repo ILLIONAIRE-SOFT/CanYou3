@@ -28,79 +28,10 @@
                                 <rect key="frame" x="16" y="20" width="288" height="484"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-0u-D50" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="30" y="226" width="228" height="228"/>
+                                        <rect key="frame" x="30" y="355" width="228" height="99"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="06E-1I-Ifr">
-                                                <rect key="frame" x="0.0" y="0.0" width="228" height="99"/>
-                                                <subviews>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-aX-GBq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep5" translatesAutoresizingMaskIntoConstraints="NO" id="2kN-zz-1j6">
-                                                                <rect key="frame" x="8" y="8" width="83" height="83"/>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-XM-BjJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="Terry">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.95919519659999997" green="0.46731954809999998" blue="0.4639127851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstItem="2kN-zz-1j6" firstAttribute="leading" secondItem="Gsv-aX-GBq" secondAttribute="leading" constant="8" id="3iU-38-Zs0"/>
-                                                            <constraint firstAttribute="width" secondItem="Gsv-aX-GBq" secondAttribute="height" multiplier="1:1" id="3uc-gd-PSc"/>
-                                                            <constraint firstItem="dpJ-XM-BjJ" firstAttribute="leading" secondItem="Gsv-aX-GBq" secondAttribute="leading" id="GH7-cJ-XMR"/>
-                                                            <constraint firstAttribute="trailing" secondItem="2kN-zz-1j6" secondAttribute="trailing" constant="8" id="K4p-CP-e3j"/>
-                                                            <constraint firstItem="dpJ-XM-BjJ" firstAttribute="top" secondItem="Gsv-aX-GBq" secondAttribute="top" id="RNQ-ys-nr2"/>
-                                                            <constraint firstAttribute="bottom" secondItem="dpJ-XM-BjJ" secondAttribute="bottom" id="RiA-Xx-wmd"/>
-                                                            <constraint firstAttribute="bottom" secondItem="2kN-zz-1j6" secondAttribute="bottom" constant="8" id="hTA-nS-rYK"/>
-                                                            <constraint firstAttribute="trailing" secondItem="dpJ-XM-BjJ" secondAttribute="trailing" id="khA-wN-w2s"/>
-                                                            <constraint firstItem="2kN-zz-1j6" firstAttribute="top" secondItem="Gsv-aX-GBq" secondAttribute="top" constant="8" id="vGC-hK-3a4"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZO-SS-Blx">
-                                                        <rect key="frame" x="129" y="0.0" width="99" height="99"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBadge" translatesAutoresizingMaskIntoConstraints="NO" id="WgT-WR-jhX">
-                                                                <rect key="frame" x="8" y="8" width="83" height="83"/>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKS-5t-rnk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                <state key="normal" title="머넣지">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="WgT-WR-jhX" secondAttribute="bottom" constant="8" id="1bQ-GJ-utY"/>
-                                                            <constraint firstItem="WgT-WR-jhX" firstAttribute="top" secondItem="gZO-SS-Blx" secondAttribute="top" constant="8" id="BsK-JF-dAH"/>
-                                                            <constraint firstItem="WgT-WR-jhX" firstAttribute="leading" secondItem="gZO-SS-Blx" secondAttribute="leading" constant="8" id="EVA-Fl-i3p"/>
-                                                            <constraint firstAttribute="bottom" secondItem="rKS-5t-rnk" secondAttribute="bottom" id="LrP-rH-A1g"/>
-                                                            <constraint firstItem="rKS-5t-rnk" firstAttribute="leading" secondItem="gZO-SS-Blx" secondAttribute="leading" id="XCX-Zq-8mg"/>
-                                                            <constraint firstItem="rKS-5t-rnk" firstAttribute="top" secondItem="gZO-SS-Blx" secondAttribute="top" id="g5K-fv-Drw"/>
-                                                            <constraint firstAttribute="trailing" secondItem="WgT-WR-jhX" secondAttribute="trailing" constant="8" id="jfv-t9-qUa"/>
-                                                            <constraint firstAttribute="width" secondItem="gZO-SS-Blx" secondAttribute="height" multiplier="1:1" id="kO0-yF-HJk"/>
-                                                            <constraint firstAttribute="trailing" secondItem="rKS-5t-rnk" secondAttribute="trailing" id="uPE-sv-RPc"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-br-Xjz">
-                                                <rect key="frame" x="0.0" y="129" width="228" height="99"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="99"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtE-cR-4Mu">
                                                         <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
@@ -348,8 +279,6 @@
                         <outlet property="rewardImageView" destination="6em-Vo-McQ" id="6Sg-lp-S92"/>
                         <outlet property="rewardView" destination="GtE-cR-4Mu" id="ptG-tU-yJo"/>
                         <outlet property="timeLabel" destination="1Wk-mW-fEP" id="2Zw-Sv-tcW"/>
-                        <outlet property="view1" destination="Gsv-aX-GBq" id="Fuf-tx-YKt"/>
-                        <outlet property="view2" destination="gZO-SS-Blx" id="2aJ-68-5xY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lM7-3N-DnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,6 +315,5 @@
         <image name="Reward-Star" width="256" height="256"/>
         <image name="noBadge" width="150" height="150"/>
         <image name="settings" width="1000" height="1000"/>
-        <image name="sheep5" width="250" height="250"/>
     </resources>
 </document>

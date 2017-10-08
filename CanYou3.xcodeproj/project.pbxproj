@@ -33,6 +33,7 @@
 		076A5A061F66B66F00BCB8F9 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */; };
 		076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A081F66B79900BCB8F9 /* BaseViewController.swift */; };
 		076A5A0B1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */; };
+		076E1D9C1F79451D0038F324 /* BaseDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076E1D9B1F79451C0038F324 /* BaseDashboardViewController.swift */; };
 		077696741F687030000BC687 /* Reward+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */; };
 		077696751F687030000BC687 /* Reward+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776966D1F687030000BC687 /* Reward+CoreDataProperties.swift */; };
 		077696761F687030000BC687 /* HealthInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0776966E1F687030000BC687 /* HealthInfo+CoreDataClass.swift */; };
@@ -136,6 +137,7 @@
 		076A5A051F66B66F00BCB8F9 /* StoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
 		076A5A081F66B79900BCB8F9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		076A5A0A1F66B9FB00BCB8F9 /* BaseBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackgroundViewController.swift; sourceTree = "<group>"; };
+		076E1D9B1F79451C0038F324 /* BaseDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDashboardViewController.swift; sourceTree = "<group>"; };
 		0776966C1F687030000BC687 /* Reward+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reward+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0776966D1F687030000BC687 /* Reward+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reward+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0776966E1F687030000BC687 /* HealthInfo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HealthInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -242,18 +244,18 @@
 		07592B1E1F5E84E900986944 /* CanYou3 */ = {
 			isa = PBXGroup;
 			children = (
-				07A590591F70DB2E0056D9DD /* CanYou3.entitlements */,
-				0760C8491F79109000FC4A15 /* Reward */,
-				0760C8581F7913EB00FC4A15 /* Models */,
 				0760C8571F7913C800FC4A15 /* Badge */,
 				0760C8561F7913B900FC4A15 /* Base */,
+				07A590591F70DB2E0056D9DD /* CanYou3.entitlements */,
+				0760C84A1F79110900FC4A15 /* Controller */,
 				0760C8551F7913A900FC4A15 /* Dashboard */,
 				0760C8541F79139A00FC4A15 /* HealthInfo */,
-				0760C8511F79136A00FC4A15 /* Settings */,
-				075CC5341F79149800BEBEAB /* Main */,
-				0760C84B1F7912B900FC4A15 /* Supporting Files */,
-				0760C84A1F79110900FC4A15 /* Controller */,
 				07592B2B1F5E84E900986944 /* Info.plist */,
+				075CC5341F79149800BEBEAB /* Main */,
+				0760C8581F7913EB00FC4A15 /* Models */,
+				0760C8491F79109000FC4A15 /* Reward */,
+				0760C8511F79136A00FC4A15 /* Settings */,
+				0760C84B1F7912B900FC4A15 /* Supporting Files */,
 			);
 			path = CanYou3;
 			sourceTree = "<group>";
@@ -416,6 +418,7 @@
 			children = (
 				076A5A001F66B34000BCB8F9 /* Dashboard.storyboard */,
 				076A5A021F66B55900BCB8F9 /* DashboardViewController.swift */,
+				076E1D9B1F79451C0038F324 /* BaseDashboardViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				07F664341F6BE621004DE43B /* RewardStrore.swift in Sources */,
 				07592B201F5E84E900986944 /* AppDelegate.swift in Sources */,
 				077696A31F68859F000BC687 /* SettingVersionTableViewController.swift in Sources */,
+				076E1D9C1F79451D0038F324 /* BaseDashboardViewController.swift in Sources */,
 				076A5A091F66B79900BCB8F9 /* BaseViewController.swift in Sources */,
 				07F4E6541F6A329B0040CC1B /* Version.swift in Sources */,
 				07901DB31F6E527B006FC6DC /* RewardTableViewCell.swift in Sources */,

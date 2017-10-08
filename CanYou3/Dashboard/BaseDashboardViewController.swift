@@ -1,8 +1,8 @@
 //
-//  DashboardViewController.swift
+//  BaseDashboardViewController.swift
 //  CanYou3
 //
-//  Created by Macbook Pro on 2017. 9. 11..
+//  Created by Macbook Pro on 2017. 9. 25..
 //  Copyright © 2017년 Eric.Park. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import Hero
 import GTProgressBar
 
-class DashboardViewController: BaseBackgroundViewController {
+class BaseDashboardViewController: BaseBackgroundViewController {
     // MARK : - Properties
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var dayLabel: UILabel!
@@ -36,8 +36,8 @@ class DashboardViewController: BaseBackgroundViewController {
     @IBOutlet var rewardButton: UIButton!
     @IBOutlet var rewardView: UIView!
     
-    @IBOutlet var view1: UIView!
-    @IBOutlet var view2: UIView!
+    //    @IBOutlet var view1: UIView!
+    //    @IBOutlet var view2: UIView!
     
     var timer: Timer?
     
@@ -91,8 +91,8 @@ class DashboardViewController: BaseBackgroundViewController {
         super.viewDidLoad()
         startTimer()
         setColors()
-        view1.heroModifiers = [.fade, .translate(y:20)]
-        view2.heroModifiers = [.fade, .translate(y:20)]
+        //        view1.heroModifiers = [.fade, .translate(y:20)]
+        //        view2.heroModifiers = [.fade, .translate(y:20)]
         badgeView.heroModifiers = [.fade, .translate(y:20)]
         rewardView.heroModifiers = [.fade, .translate(y:20)]
     }
