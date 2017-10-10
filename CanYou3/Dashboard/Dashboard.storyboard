@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="top" id="9Uf-jE-llp"/>
                         <viewControllerLayoutGuide type="bottom" id="RT9-qe-ffw"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="AM2-wo-1dc">
+                    <view key="view" contentMode="scaleToFill" id="AM2-wo-1dc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -142,6 +142,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qol-2E-wcZ" firstAttribute="leading" secondItem="ah2-VQ-kvq" secondAttribute="leading" id="2Ke-vN-L7K"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KeH-fe-sQu" userLabel="Time Stack View">
                                         <rect key="frame" x="30" y="70.5" width="228" height="24"/>
@@ -193,6 +196,7 @@
                                     <constraint firstItem="YvL-0u-D50" firstAttribute="centerX" secondItem="GeW-Hj-JTV" secondAttribute="centerX" id="EQV-nY-zve"/>
                                     <constraint firstAttribute="trailing" secondItem="KeH-fe-sQu" secondAttribute="trailing" constant="30" id="NfE-cE-wWe"/>
                                     <constraint firstItem="YvL-0u-D50" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GeW-Hj-JTV" secondAttribute="leading" constant="30" id="UQa-Ll-cEE"/>
+                                    <constraint firstItem="TBz-9S-AuZ" firstAttribute="leading" secondItem="qol-2E-wcZ" secondAttribute="leading" id="Uag-Ej-kVo"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YvL-0u-D50" secondAttribute="trailing" priority="750" constant="30" id="YAa-Qo-oCP"/>
                                     <constraint firstItem="kWr-Wl-4Q6" firstAttribute="top" secondItem="KeH-fe-sQu" secondAttribute="bottom" constant="8" id="YkQ-Xq-MmI"/>
                                     <constraint firstItem="KeH-fe-sQu" firstAttribute="leading" secondItem="YvL-0u-D50" secondAttribute="leading" id="ZOF-ml-yZJ"/>
@@ -250,7 +254,7 @@
                                 </connections>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="UVP-Xa-3zJ" secondAttribute="bottom" constant="8" id="4uF-WO-pae"/>
                             <constraint firstItem="i5o-zy-Dcl" firstAttribute="top" secondItem="GeW-Hj-JTV" secondAttribute="bottom" constant="8" id="7lp-Kk-WoF"/>

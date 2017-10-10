@@ -16,5 +16,4 @@ extension UIViewController {
     var currentUser: User {
         return self.dc.currentUser
     }
-    
 }

@@ -18,5 +18,4 @@ struct Color {
                                     green: 91.0 / 255.0,
                                     blue: 158.0 / 255.0,
                                     alpha: 1.0)
-    
 }

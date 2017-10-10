@@ -17,8 +17,6 @@ struct Formatter {
         return df.string(from: date as Date)
     }
     
-    
-    
     static func string(fromNumber num: NSNumber) -> String {
         let numberFormatter = NumberFormatter().then {
             $0.numberStyle = .decimal
