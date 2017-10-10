@@ -64,6 +64,7 @@
 		077696A91F688600000BC687 /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */; };
 		077696AB1F688750000BC687 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077696AA1F688750000BC687 /* AnimationController.swift */; };
 		077696AD1F688A95000BC687 /* SettingVersion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077696AC1F688A95000BC687 /* SettingVersion.storyboard */; };
+		078E03551F8CF493007FF359 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 078E03541F8CF493007FF359 /* README.md */; };
 		07901DAF1F6E5266006FC6DC /* Reward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07901DAE1F6E5266006FC6DC /* Reward.storyboard */; };
 		07901DB11F6E5272006FC6DC /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07901DB01F6E5272006FC6DC /* RewardViewController.swift */; };
 		07901DB31F6E527B006FC6DC /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07901DB21F6E527B006FC6DC /* RewardTableViewCell.swift */; };
@@ -168,6 +169,7 @@
 		077696A81F688600000BC687 /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
 		077696AA1F688750000BC687 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		077696AC1F688A95000BC687 /* SettingVersion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingVersion.storyboard; sourceTree = "<group>"; };
+		078E03541F8CF493007FF359 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		07901DAE1F6E5266006FC6DC /* Reward.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reward.storyboard; sourceTree = "<group>"; };
 		07901DB01F6E5272006FC6DC /* RewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		07901DB21F6E527B006FC6DC /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		0760C84B1F7912B900FC4A15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				078E03541F8CF493007FF359 /* README.md */,
 				0760C8501F79134800FC4A15 /* Resources */,
 				0760C84F1F79133100FC4A15 /* Configurations */,
 				0760C84E1F79131E00FC4A15 /* Extensions */,
@@ -640,6 +643,7 @@
 				07592B251F5E84E900986944 /* Main.storyboard in Resources */,
 				077696911F68837B000BC687 /* SettingBirthDate.storyboard in Resources */,
 				076A5A011F66B34000BCB8F9 /* Dashboard.storyboard in Resources */,
+				078E03551F8CF493007FF359 /* README.md in Resources */,
 				077696841F687FBD000BC687 /* Settings.storyboard in Resources */,
 				077696931F68839B000BC687 /* SettingStartDate.storyboard in Resources */,
 				07901DAF1F6E5266006FC6DC /* Reward.storyboard in Resources */,
