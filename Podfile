@@ -6,7 +6,7 @@ target 'CanYou3' do
   use_frameworks!
 
   # Pods for CanYou3
-  pod 'Hero', '1.0.0-alpha.4'
+  pod 'Hero'
   pod 'Then'
   pod 'GTProgressBar'
   pod 'LTMorphingLabel'

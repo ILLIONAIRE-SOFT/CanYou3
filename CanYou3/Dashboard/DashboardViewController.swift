@@ -51,10 +51,10 @@ class DashboardViewController: BaseBackgroundViewController {
     @IBAction func settingButtonTapped(_ sender: UIButton) {
         // push view controller but animate modally
         let vc = viewController(forStoryboardName: StoryboardName.settings)
-        vc.heroModalAnimationType = .selectBy(presenting:.cover(direction:.up), dismissing:.uncover(direction:.down))
+        vc.hero.modalAnimationType = .selectBy(presenting:.cover(direction:.up), dismissing:.uncover(direction:.down))
         if let nc = self.navigationController{
-//            nc.addChildViewController(vc)
-            nc.pushViewController(vc, animated: false)
+            nc.hero.navigationAnimationType = .cover(direction: .up)
+            nc.pushViewController(vc, animated: true)
         }
         
         

@@ -24,6 +24,7 @@ class SettingsTableViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Remove Back Button
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
@@ -45,6 +46,11 @@ class SettingsTableViewController: BaseTableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
+    }
+    
+    @IBAction func closeButtonTapped(_ sender: UIBarButtonItem) {
+        self.navigationController?.hero.navigationAnimationType = .uncover(direction: .down)
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
