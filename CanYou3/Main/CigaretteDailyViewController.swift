@@ -40,11 +40,9 @@ class CigaretteDailyViewController: BaseBackgroundViewController {
         dc.initData()
         dc.saveContext()
         
-        
-        
         let vc = viewController(forStoryboardName: StoryboardName.dashboard)
         
-        self.hero_replaceViewController(with: vc)
+        self.hero.replaceViewController(with: vc)
     }
     
     override func didReceiveMemoryWarning() {

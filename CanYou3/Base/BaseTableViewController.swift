@@ -33,6 +33,11 @@ class BaseTableViewController: UITableViewController {
         super.viewWillDisappear(animated)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.hero.navigationAnimationType = .auto
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //super.tableView(tableView, didSelectRowAt: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)

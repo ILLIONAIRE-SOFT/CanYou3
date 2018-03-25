@@ -15,14 +15,14 @@ class CanYouAnimationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             //self.label.fadeTransition(for: 1.2)
-            self.label.morphingDuration = 1.2
+            self.label.morphingDuration = 1.0
             self.label.morphingEffect = .evaporate
             self.label.text = "You Can !"
         })
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.7, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
             // Instantiate View Controller
             let vc: UIViewController!
             if self.dc.currentUser.isFirst {

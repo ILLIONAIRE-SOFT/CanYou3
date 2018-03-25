@@ -46,6 +46,11 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.hero.navigationAnimationType = .auto
+    }
+    
     // MARK : Methods for Keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -57,7 +62,7 @@ class BaseViewController: UIViewController {
         view.endEditing(true)
     }
     
-    // MARK : Alert suppoert
+    // MARK : Alert support
     func presentMessageBox(_ message: String) {
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
         sheet.message = message
